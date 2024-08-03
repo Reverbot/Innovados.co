@@ -10,7 +10,7 @@ import email from "/public/email.png";
 >
   <div class="max-w-6xl mx-auto">
     <div class="md:flex md:justify-center flex-2 gap-40 md:my-20 md:mx-5">
-      <form action="" class="flex flex-col mb-20 bg-slate-800 p-10 rounded-lg">
+      <form action="https://formspree.io/f/xdkngyrp" method="post" class="flex flex-col mb-20 bg-slate-800 p-10 rounded-lg">
         <h2
           class="mb-5 font-bold text-3xl md:text-5xl bg-gradient-to-r from-cyan-600 to-slate-50 text-transparent bg-clip-text"
         >
@@ -22,11 +22,13 @@ import email from "/public/email.png";
         </p>
         <div class="md:flex gap-5">
           <input
+            name="Nombre"
             type="text"
             placeholder="Nombre"
             class="mb-5 w-full placeholder:text-slate-600 bg-slate-200 py-4 px-4 text-slate-600 rounded-sm border-1 border-slate-300"
           />
           <input
+            name="Apellido"
             type="text"
             placeholder="Apellido"
             class="mb-5 w-full placeholder:text-slate-600 bg-slate-200 py-4 px-4 text-slate-600 rounded-sm border-1 border-slate-300"
@@ -34,11 +36,13 @@ import email from "/public/email.png";
         </div>
         <div class="md:flex gap-5">
           <input
+            name="Correo"
             type="email"
             placeholder="Correo Electronico"
             class="mb-5 w-full placeholder:text-slate-600 bg-slate-200 py-4 px-4 text-slate-600 rounded-sm border-1 border-slate-300"
           />
           <input
+            name="Telefono"
             type="tel"
             placeholder="Telefono"
             class="mb-5 w-full placeholder:text-slate-600 bg-slate-200 py-4 px-4 text-slate-600 rounded-sm border-1 border-slate-300"
@@ -46,7 +50,7 @@ import email from "/public/email.png";
         </div>
 
         <textarea
-          name=""
+          name="Mensaje"
           id=""
           cols="30"
           rows="10"
@@ -54,6 +58,7 @@ import email from "/public/email.png";
           class="mb-5 w-full placeholder:text-slate-600 bg-slate-200 py-4 px-4 text-slate-600 rounded-sm border-1 border-slate-300"
         ></textarea>
         <button
+          type="submit"
           class="bg-gradient-to-r rounded-full from-cyan-900 via-cyan-800 to-cyan-500 bg-no-repeat bg-[position:_100%_100%] hover:bg-[position:_0%_0%] bg-[size:_200%] transition-all duration-500 text-slate-50 py-4 px-10"
           >Enviar</button
         >

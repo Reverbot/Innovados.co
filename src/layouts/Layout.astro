@@ -20,7 +20,7 @@ import  SpeedInsights  from "@vercel/speed-insights/astro"
     <title>{title}</title>
   </head>
   <body>
-    <script>
+    <!-- <script>
       function checkPassword() {
         var password = prompt("Por favor, ingrese la contraseña:");
         if (password === "elfuturo") {
@@ -33,7 +33,7 @@ import  SpeedInsights  from "@vercel/speed-insights/astro"
         }
       }
       window.onload = checkPassword;
-    </script>
+    </script> -->
     <slot />
     <SpeedInsights />
   </body>
@@ -44,9 +44,9 @@ import  SpeedInsights  from "@vercel/speed-insights/astro"
     background: #ddd;
     color: #fff;
   }
-  body {
+  /* body {
     display: none;
-  }
+  } */
 
   .rotate-img {
     animation: rotate 5s linear infinite;
