@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import heroimage from "/public/heroimage.svg";
+import heroimage from "/public/heroimage.webp";
 import Menu from "../sections/Menu.astro";
 ---
 
@@ -20,6 +20,7 @@ import Menu from "../sections/Menu.astro";
         >
           Copywriter + Web Developer
         </h1>
+         <Image src={heroimage} alt="InnovaDos.co" class="rotate-img  my-10 md:hidden" />
         <p class="mb-10 text-slate-300">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolore
           praesentium provident quod, dolorem corporis suscipit dicta rerum,
@@ -33,7 +34,7 @@ import Menu from "../sections/Menu.astro";
         >
       </div>
       <div>
-        <Image src={heroimage} alt="Hero image" class="rotate-img" />
+        <Image src={heroimage} alt="InnovaDos.co" class="rotate-img hidden md:block" />
       </div>
     </div>
     <div class="grid grid-cols-2 md:grid-cols-3 py-10 max-w-6xl mx-auto gap-20">
