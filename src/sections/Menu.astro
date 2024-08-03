@@ -1,0 +1,130 @@
+---
+import { Image } from "astro:assets";
+import logo from "./public/innovados.svg";
+---
+
+<header class="md:py-5">
+  <nav
+    class="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 lg:px-20"
+    aria-label="Global"
+  >
+    <div class="flex lg:flex-1">
+      <a href="#" class="-m-1.5 p-1.5">
+        <span class="sr-only">InnovaDos.co</span>
+        <Image src={logo} alt="Innovados" class="h-10 w-auto" />
+      </a>
+    </div>
+    <div class="flex lg:hidden">
+      <button
+        type="button"
+        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-cyan-500"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="hidden lg:flex lg:gap-x-12 items-center">
+      <div class="relative"></div>
+
+      <a
+        href="#servicios"
+        class="text-sm font-semibold leading-6 hover:text-cyan-500 text-slate-300"
+        >Servicios</a
+      >
+      <a
+        href="#funnels"
+        class="text-sm font-semibold leading-6 hover:text-cyan-500 text-slate-300"
+        >Funnels</a
+      >
+      <a
+        href="#email"
+        class="text-sm font-semibold leading-6 hover:text-cyan-500 text-slate-300"
+        >Email Marketing</a
+      >
+      <a
+        href="#trabajos"
+        class="text-sm font-semibold leading-6 hover:text-cyan-500 text-slate-300"
+        >Trabajos</a
+      >
+      <a
+        href="#contacto"
+        class="bg-gradient-to-r py-2 px-4 rounded-full from-cyan-900 via-cyan-800 to-cyan-500 bg-no-repeat bg-[position:_100%_100%] hover:bg-[position:_0%_0%] bg-[size:_200%] transition-all duration-500"
+        >Contacto</a
+      >
+    </div>
+  </nav>
+  <!-- Mobile menu, show/hide based on menu open state. -->
+  <div class="hidden" role="dialog" aria-modal="true">
+    <!-- Background backdrop, show/hide based on slide-over state. -->
+    <div class="fixed inset-0 z-10"></div>
+    <div
+      class="bg-[length:500px_500px] bg-repeat-x bg-center bg-cyan-950 bg-[url('data:image/svg+xml;base64,PHN2ZyAgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA2KSIgaGVpZ2h0PSI1NnB4IiB3aWR0aD0iNTZweCIgdmlld0JveD0iMCAwIDU2IDU2IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yOCwyOFY1NkgwVjI4Wk01NiwwVjI4SDI4VjBaIi8+PC9zdmc+')] fixed inset-y-0 right-0 z-10 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+    >
+      <div class="flex items-center justify-between">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">Your Company</span>
+          <Image src={logo} alt="Innovados" class="h-10 w-auto" />
+        </a>
+        <button type="button" class="-m-2.5 rounded-md p-2.5 text-cyan-500">
+          <span class="sr-only">Close menu</span>
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="mt-6 flow-root">
+        <div class="-my-6 divide-y divide-gray-500/10">
+          <div class="space-y-2 py-6">
+            <a
+              href="#servicios"
+              class="-mx-3 close-menu block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-300 hover:text-cyan-500"
+              >Servicios</a
+            >
+            <a
+              href="#funnels"
+              class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-300 hover:text-cyan-500"
+              >Funnels</a
+            >
+            <a
+              href="#email"
+              class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-300 hover:text-cyan-500"
+              >Email Marketing</a
+            >
+            <a
+              href="#trabajos"
+              class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-300 hover:text-cyan-500"
+              >Trabajos</a
+            >
+            <a
+              href="#contacto"
+              class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-300 hover:text-cyan-500"
+              >Contacto</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

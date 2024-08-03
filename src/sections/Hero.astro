@@ -1,0 +1,59 @@
+---
+import { Image } from "astro:assets";
+import heroimage from "/public/heroimage.svg";
+import Menu from "@/sections/Menu.astro";
+---
+
+<div
+  class="bg-[length:500px_500px] bg-repeat-x bg-center bg-cyan-950 bg-[url('data:image/svg+xml;base64,PHN2ZyAgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA2KSIgaGVpZ2h0PSI1NnB4IiB3aWR0aD0iNTZweCIgdmlld0JveD0iMCAwIDU2IDU2IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yOCwyOFY1NkgwVjI4Wk01NiwwVjI4SDI4VjBaIi8+PC9zdmc+')]"
+>
+  <Menu />
+
+  <section class="px-24">
+    <div
+      class="grid gap-2 justify-center py-10 md:px-20 items-center md:grid-cols-2 max-w-6xl mx-auto"
+    >
+      <div>
+        <h2 class="text-3xl font-bold mb-2">Textos que venden</h2>
+        <h1
+          class="mb-5 font-extrabold text-5xl md:text-6xl bg-gradient-to-r from-cyan-600 to-slate-50 text-transparent bg-clip-text"
+        >
+          Copywriter + Web Developer
+        </h1>
+        <p class="mb-10 text-slate-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolore
+          praesentium provident quod, dolorem corporis suscipit dicta rerum,
+          earum ipsa possimus vel iure repudiandae a. Aperiam sed minima tempora
+          perspiciatis.
+        </p>
+        <a
+          href="#contacto"
+          class="border text-cyan-500 border-cyan-500 px-6 py-4 rounded-full font-semibold transition-colors hover:bg-cyan-500 hover:text-slate-50"
+          >Contactanos</a
+        >
+      </div>
+      <div>
+        <Image src={heroimage} alt="Hero image" class="rotate-img" />
+      </div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 py-10 max-w-6xl mx-auto gap-20">
+      <div class="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+        <span class="text-5xl font-extrabold">+5</span><span class="w-20"
+          >Años de experiencia</span
+        >
+      </div>
+      <div class="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+        <span class="text-5xl font-extrabold">+50</span><span class="w-20">
+          Proyectos completos</span
+        >
+      </div>
+      <div
+        class="flex flex-col md:flex-row items-center col-span-2 gap-2 md:gap-4 md:col-span-1"
+      >
+        <span class="text-5xl font-extrabold">+500</span><span class="w-20"
+          >Emails escritos</span
+        >
+      </div>
+    </div>
+  </section>
+</div>

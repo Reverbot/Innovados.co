@@ -1,0 +1,87 @@
+---
+import { Image } from "astro:assets";
+import phone from "/public/phone-call.png";
+import email from "/public/email.png";
+---
+
+<section
+  class="mx-auto py-20 bg-[length:500px_500px] bg-repeat-x bg-center bg-cyan-950 px-5 md:px-24 bg-[url('data:image/svg+xml;base64,PHN2ZyAgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA2KSIgaGVpZ2h0PSI1NnB4IiB3aWR0aD0iNTZweCIgdmlld0JveD0iMCAwIDU2IDU2IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yOCwyOFY1NkgwVjI4Wk01NiwwVjI4SDI4VjBaIi8+PC9zdmc+')]"
+  id="contacto"
+>
+  <div class="max-w-6xl mx-auto">
+    <div class="md:flex md:justify-center flex-2 gap-40 md:my-20 md:mx-5">
+      <form action="" class="flex flex-col mb-20 bg-slate-800 p-10 rounded-lg">
+        <h2
+          class="mb-5 font-bold text-3xl md:text-5xl bg-gradient-to-r from-cyan-600 to-slate-50 text-transparent bg-clip-text"
+        >
+          Trabajemos juntos
+        </h2>
+        <p class="mb-5">
+          I design and code beautifully simple things and i love what i do. Just
+          simple like that!
+        </p>
+        <div class="md:flex gap-5">
+          <input
+            type="text"
+            placeholder="Nombre"
+            class="mb-5 w-full placeholder:text-slate-600 bg-slate-200 py-4 px-4 text-slate-600 rounded-sm border-1 border-slate-300"
+          />
+          <input
+            type="text"
+            placeholder="Apellido"
+            class="mb-5 w-full placeholder:text-slate-600 bg-slate-200 py-4 px-4 text-slate-600 rounded-sm border-1 border-slate-300"
+          />
+        </div>
+        <div class="md:flex gap-5">
+          <input
+            type="email"
+            placeholder="Correo Electronico"
+            class="mb-5 w-full placeholder:text-slate-600 bg-slate-200 py-4 px-4 text-slate-600 rounded-sm border-1 border-slate-300"
+          />
+          <input
+            type="tel"
+            placeholder="Telefono"
+            class="mb-5 w-full placeholder:text-slate-600 bg-slate-200 py-4 px-4 text-slate-600 rounded-sm border-1 border-slate-300"
+          />
+        </div>
+
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Mensaje"
+          class="mb-5 w-full placeholder:text-slate-600 bg-slate-200 py-4 px-4 text-slate-600 rounded-sm border-1 border-slate-300"
+        ></textarea>
+        <button
+          class="bg-gradient-to-r rounded-full from-cyan-900 via-cyan-800 to-cyan-500 bg-no-repeat bg-[position:_100%_100%] hover:bg-[position:_0%_0%] bg-[size:_200%] transition-all duration-500 text-slate-50 py-4 px-10"
+          >Enviar</button
+        >
+      </form>
+      <div class="">
+        <div class="flex gap-4 mb-10">
+          <Image
+            src={phone}
+            alt="telefono"
+            class="w-12 border-2 border-cyan-500 bg-cyan-500 rounded-full p-1"
+          />
+          <div>
+            <h6>Teléfono</h6>
+            <p>+1 (561) 552-0222</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <Image
+            src={email}
+            alt="Correo"
+            class="w-12 border-2 border-cyan-500 bg-cyan-500 rounded-full p-1"
+          />
+          <div>
+            <h6>Correo</h6>
+            <p>contacto@innovados.co</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

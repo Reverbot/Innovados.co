@@ -1,0 +1,63 @@
+---
+import { Image } from "astro:assets";
+import active from "/public/habilidades/active.webp";
+import ChatGPT from "/public/habilidades/chatgpt.webp";
+import wordpress from "/public/habilidades/wordpress.png";
+import zapier from "/public/habilidades/zapier.webp";
+import zoho from "/public/habilidades/zoho.webp";
+---
+
+<section class="max-w-6xl mx-auto my-20">
+  <h2
+    class="text-center mx-5 mb-5 font-extrabold text-3xl md:text-5xl bg-gradient-to-r from-cyan-600 to-gray-950 text-transparent bg-clip-text"
+  >
+    Nuestras habilidades
+  </h2>
+  <p class="text-slate-950 text-center">
+    Your content goes here. Edit or remove this text inline or in the module
+    Content settings.
+  </p>
+  <ul class="grid grid-cols-2 md:grid-cols-5 my-20 mx-5">
+    <li class="w-36">
+      <Image
+        src={active}
+        alt="active"
+        class="border-[24px] hover:scale-105 transition-all hover:border-cyan-900 hover:bg-cyan-900 bg-cyan-500 border-cyan-500 rounded-lg"
+      />
+      <h4 class="mt-2 text-cyan-900">Active Campaing</h4>
+    </li>
+
+    <li class="w-36">
+      <Image
+        src={ChatGPT}
+        alt="ChatGPT"
+        class="border-[24px] hover:scale-105 transition-all hover:border-cyan-900 hover:bg-cyan-900 bg-cyan-500 border-cyan-500 rounded-lg"
+      />
+      <h4 class="mt-2 text-cyan-900 text-center">Chat GPT</h4>
+    </li>
+    <li class="w-36">
+      <Image
+        src={wordpress}
+        alt="Wordpress"
+        class="border-[24px] hover:scale-105 transition-all hover:border-cyan-900 hover:bg-cyan-900 bg-cyan-500 border-cyan-500 rounded-lg"
+      />
+      <h4 class="mt-2 text-cyan-900 text-center">Wordpress</h4>
+    </li>
+    <li class="w-36">
+      <Image
+        src={zapier}
+        alt="Zapier"
+        class="border-[24px] hover:scale-105 transition-all hover:border-cyan-900 hover:bg-cyan-900 bg-cyan-500 border-cyan-500 rounded-lg"
+      />
+      <h4 class="mt-2 text-cyan-900 text-center">Zapier</h4>
+    </li>
+    <li class="w-36">
+      <Image
+        src={zoho}
+        alt="Zoho"
+        class="border-[24px] hover:scale-105 transition-all hover:border-cyan-900 hover:bg-cyan-900 bg-cyan-500 border-cyan-500 rounded-lg"
+      />
+      <h4 class="mt-2 text-cyan-900 text-center">Zoho</h4>
+    </li>
+  </ul>
+</section>
