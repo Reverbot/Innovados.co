@@ -18,6 +18,7 @@ import logo from "/public/innovados.svg";
       <button
         type="button"
         class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-cyan-500"
+        id="open-menu"
       >
         <span class="sr-only">Open main menu</span>
         <svg
@@ -66,18 +67,18 @@ import logo from "/public/innovados.svg";
     </div>
   </nav>
   <!-- Mobile menu, show/hide based on menu open state. -->
-  <div class="hidden" role="dialog" aria-modal="true">
+  <div class="hidden" role="dialog" aria-modal="true" id="mobile-menu">
     <!-- Background backdrop, show/hide based on slide-over state. -->
-    <div class="fixed inset-0 z-10"></div>
+    <div class="fixed inset-0 z-10 bg-black bg-opacity-50"></div>
     <div
-      class="bg-[length:500px_500px] bg-repeat-x bg-center bg-cyan-950 bg-[url('data:image/svg+xml;base64,PHN2ZyAgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA2KSIgaGVpZ2h0PSI1NnB4IiB3aWR0aD0iNTZweCIgdmlld0JveD0iMCAwIDU2IDU2IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yOCwyOFY1NkgwVjI4Wk01NiwwVjI4SDI4VjBaIi8+PC9zdmc+')] fixed inset-y-0 right-0 z-10 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+      class="bg-[length:500px_500px] bg-repeat-x bg-center bg-cyan-950 bg-[url('data:image/svg+xml;base64,PHN2ZyAgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA2KSIgaGVpZ2h0PSI1NnB4IiB3aWR0aD0iNTZweCIgdmlld0JveD0iMCAwIDU2IDU2IiBwcmVzZXJ2ZUFzcGV0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTI4LDI4VjU2SDBWMjhXTTU2LDBWMjgiLz48L3N2Zz4=')] fixed inset-y-0 right-0 z-10 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
     >
       <div class="flex items-center justify-between">
         <a href="#" class="-m-1.5 p-1.5">
           <span class="sr-only">Your Company</span>
           <Image src={logo} alt="Innovados" class="h-10 w-auto" />
         </a>
-        <button type="button" class="-m-2.5 rounded-md p-2.5 text-cyan-500">
+        <button type="button" class="-m-2.5 rounded-md p-2.5 text-cyan-500" id="close-menu">
           <span class="sr-only">Close menu</span>
           <svg
             class="h-6 w-6"
@@ -104,22 +105,22 @@ import logo from "/public/innovados.svg";
             >
             <a
               href="#funnels"
-              class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-300 hover:text-cyan-500"
+              class="-mx-3 close-menu block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-300 hover:text-cyan-500"
               >Funnels</a
             >
             <a
               href="#email"
-              class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-300 hover:text-cyan-500"
+              class="-mx-3 close-menu block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-300 hover:text-cyan-500"
               >Email Marketing</a
             >
             <a
               href="#trabajos"
-              class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-300 hover:text-cyan-500"
+              class="-mx-3 close-menu block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-300 hover:text-cyan-500"
               >Trabajos</a
             >
             <a
               href="#contacto"
-              class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-300 hover:text-cyan-500"
+              class="-mx-3 close-menu block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-300 hover:text-cyan-500"
               >Contacto</a
             >
           </div>
@@ -128,3 +129,27 @@ import logo from "/public/innovados.svg";
     </div>
   </div>
 </header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const openMenuButton = document.getElementById("open-menu");
+    const closeMenuButton = document.getElementById("close-menu");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    if (openMenuButton && closeMenuButton && mobileMenu) {
+      openMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.remove("hidden");
+      });
+
+      closeMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+
+      document.querySelectorAll(".close-menu").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+    }
+  });
+</script>
