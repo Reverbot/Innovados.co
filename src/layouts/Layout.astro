@@ -19,20 +19,7 @@ import  SpeedInsights  from "@vercel/speed-insights/astro"
     <title>{title}</title>
   </head>
   <body>
-      <script>
-        function checkPassword() {
-          var password = prompt("Por favor, ingrese la contraseña:");
-          if (password === "elfuturo") {
-            document.body.style.display = "block";
-          } else {
-            alert(
-              "Contraseña incorrecta. No tienes permiso para ver el contenido.",
-            );
-            window.location.href = "https://www.google.com"; // Redirige a otra página si la contraseña es incorrecta
-          }
-        }
-        window.onload = checkPassword;
-      </script>
+    
     <slot />
     <SpeedInsights />
   </body>
@@ -43,9 +30,7 @@ import  SpeedInsights  from "@vercel/speed-insights/astro"
     background: #ddd;
     color: #fff;
   }
-  body {
-    display: none;
-  }
+   
 
   .rotate-img {
     animation: rotate 5s linear infinite;
