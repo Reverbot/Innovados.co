@@ -2,7 +2,7 @@
 interface Props {
   title: string;
 }
-
+import Menu from "../sections/Menu.astro";
 const { title } = Astro.props;
 // Supports weights 100-800
 import "@fontsource-variable/sora";
@@ -19,7 +19,8 @@ import  SpeedInsights  from "@vercel/speed-insights/astro"
     <title>{title}</title>
   </head>
   <body>
-    
+    <Menu />
+
     <slot />
     <SpeedInsights />
   </body>
@@ -46,4 +47,6 @@ import  SpeedInsights  from "@vercel/speed-insights/astro"
       transform: rotate(0deg);
     }
   }
+
+
 </style>
