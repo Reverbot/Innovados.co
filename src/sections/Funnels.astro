@@ -17,61 +17,87 @@ import funnel3 from "/public/funnel-3.webp";
     </h2>
 
     <div class="my-20 grid gap-20 md:grid-cols-2">
-      <article class="mb-10">
-        <Image
-          src={funnel1}
-          alt="Funnel 1"
-          class="md:w-96 border-x-[24px] border-t-[24px] border-cyan-700 rounded-lg"
-        />
-        <div
-          class="flex items-center gap-5 ml-3 order-first md:order-last mt-4 md:mt-0"
-        >
-          <span class="text-7xl mr-2 font-bold text-cyan-500">1</span>
-          <div>
-            <h3 class="text-3xl font-bold md:my-5">Registro Gratis</h3>
-            <p class="md:w-72">
-             Ofrecemos opciones de registro gratuito que atraen a más usuarios y expanden tu base de clientes potenciales.
-            </p>
+      <a href="/funnel/registro">
+        <article class="mb-10">
+          <Image
+            transition:name="fade-img"
+            src={funnel1}
+            alt="Funnel 1"
+            class="md:w-96 border-x-[24px] border-t-[24px] border-cyan-700 rounded-lg"
+          />
+          <div
+            class="flex items-center gap-5 ml-3 order-first md:order-last mt-4 md:mt-0"
+          >
+            <span class="text-7xl mr-2 font-bold text-cyan-500">1</span>
+            <div>
+              <h3
+                transition:name="fade-text"
+                class="text-3xl font-bold md:my-5"
+              >
+                Registro Gratis
+              </h3>
+              <p class="md:w-72">
+                Ofrecemos opciones de registro gratuito que atraen a más
+                usuarios y expanden tu base de clientes potenciales.
+              </p>
+            </div>
           </div>
-        </div>
+        </article>
+      </a>
+      <article class="mb-10">
+        <a href="/funnel/inscripcion">
+          <Image
+            transition:name="fade-img2"
+            src={funnel2}
+            alt="Funnel 1"
+            class="md:w-96 border-x-[24px] border-t-[24px] border-cyan-700 rounded-lg"
+          />
+          <div
+            class="flex items-center gap-5 ml-3 order-first md:order-last mt-4 md:mt-0"
+          >
+            <span class="text-7xl mr-2 font-bold text-cyan-500">2</span>
+            <div>
+              <h3
+                transition:name="fade-text2"
+                class="text-3xl font-bold md:my-5"
+              >
+                inscripción VIP
+              </h3>
+              <p class="md:w-72">
+                Creamos programas de inscripción VIP para tus productos o
+                servicios más exclusivos, aumentando el valor percibido y la
+                lealtad del cliente.
+              </p>
+            </div>
+          </div>
+        </a>
       </article>
       <article class="mb-10">
-        <Image
-          src={funnel2}
-          alt="Funnel 1"
-          class="md:w-96 border-x-[24px] border-t-[24px] border-cyan-700 rounded-lg"
-        />
-        <div
-          class="flex items-center gap-5 ml-3 order-first md:order-last mt-4 md:mt-0"
-        >
-          <span class="text-7xl mr-2 font-bold text-cyan-500">2</span>
-          <div>
-            <h3 class="text-3xl font-bold md:my-5">inscripción VIP</h3>
-            <p class="md:w-72">
-              Creamos programas de inscripción VIP para tus productos o servicios más exclusivos, aumentando el valor percibido y la lealtad del cliente.
-            </p>
+        <a href="/funnel/upsell">
+          <Image
+            transition:name="fade-img3"
+            src={funnel3}
+            alt="Funnel 1"
+            class="md:w-96 border-x-[24px] border-t-[24px] border-cyan-700 rounded-lg"
+          />
+          <div
+            class="flex items-center gap-5 ml-3 order-first md:order-last mt-4 md:mt-0"
+          >
+            <span class="text-7xl mr-2 font-bold text-cyan-500">3</span>
+            <div>
+              <h3
+                transition:name="fade-text3"
+                class="text-3xl font-bold md:my-5"
+              >
+                Vender un producto más caro
+              </h3>
+              <p class="md:w-72">
+                Desarrollamos estrategias para upselling que incrementan el
+                valor de cada transacción.
+              </p>
+            </div>
           </div>
-        </div>
-      </article>
-      <article class="mb-10">
-        <Image
-          src={funnel3}
-          alt="Funnel 1"
-          class="md:w-96 border-x-[24px] border-t-[24px] border-cyan-700 rounded-lg"
-        />
-        <div
-          class="flex items-center gap-5 ml-3 order-first md:order-last mt-4 md:mt-0"
-        >
-          <span class="text-7xl mr-2 font-bold text-cyan-500">3</span>
-          <div>
-            <h3 class="text-3xl font-bold md:my-5">
-              Vender un producto más caro
-            </h3>
-            <p class="md:w-72">
-             Desarrollamos estrategias para upselling que incrementan el valor de cada transacción.
-            </p>
-          </div>
-        </div>
+        </a>
       </article>
     </div>
   </div>

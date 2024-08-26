@@ -2,21 +2,27 @@
 interface Props {
   title: string;
 }
+import { ViewTransitions } from "astro:transitions";
 import Menu from "../sections/Menu.astro";
 const { title } = Astro.props;
 // Supports weights 100-800
 import "@fontsource-variable/sora";
-import  SpeedInsights  from "@vercel/speed-insights/astro"
+import SpeedInsights from "@vercel/speed-insights/astro";
 ---
 
 <!doctype html>
 <html lang="es" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Mejora tus ventas y tu web con nuestros servicios de copywriting y desarrollo. Crecemos tu negocio online." />
+    <meta
+      name="description"
+      content="Mejora tus ventas y tu web con nuestros servicios de copywriting y desarrollo. Crecemos tu negocio online."
+    />
     <meta name="viewport" content="width=device-width" />
+    <meta name="view-transition" content="same-origin" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
+    <ViewTransitions />
   </head>
   <body>
     <Menu />
@@ -31,7 +37,6 @@ import  SpeedInsights  from "@vercel/speed-insights/astro"
     background: #ddd;
     color: #fff;
   }
-   
 
   .rotate-img {
     animation: rotate 5s linear infinite;
@@ -47,6 +52,4 @@ import  SpeedInsights  from "@vercel/speed-insights/astro"
       transform: rotate(0deg);
     }
   }
-
-
 </style>

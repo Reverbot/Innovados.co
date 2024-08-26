@@ -1,0 +1,45 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import funnel1 from "/public/funnel-1.webp";
+---
+
+<Layout title="Registro Gratis">
+  <main class="bg-cyan-950 md:h-screen">
+    <section class="max-w-6xl mx-auto">
+      <article class="py-20 px-10 md:px-0 grid gap-20 md:grid-cols-2">
+        <Image
+          transition:name="fade-img"
+          src={funnel1}
+          alt="Funnel 1"
+          class="border-x-[24px] border-t-[24px] border-cyan-700 rounded-lg"
+        />
+        <div class="flex flex-col gap-5 ml-3 mt-4 md:mt-0">
+          <h2
+            transition:name="fade-text"
+            class="mb-10 font-extrabold text-3xl text-center md:text-5xl bg-gradient-to-r from-cyan-600 to-slate-50 text-transparent bg-clip-text"
+          >
+            Registro Gratis
+          </h2>
+          <p class="mb-5">
+            Ofrecemos opciones de registro gratuito que atraen a más usuarios y
+            expanden tu base de clientes potenciales.
+          </p>
+          <p class="mb-5">
+            Ofrecemos opciones de registro gratuito que atraen a más usuarios y
+            expanden tu base de clientes potenciales.
+          </p>
+          <p class="mb-10">
+            Ofrecemos opciones de registro gratuito que atraen a más usuarios y
+            expanden tu base de clientes potenciales.
+          </p>
+
+          <a
+            class="bg-gradient-to-r text-center rounded-full from-cyan-900 via-cyan-800 to-cyan-500 bg-no-repeat bg-[position:_100%_100%] hover:bg-[position:_0%_0%] bg-[size:_200%] transition-all duration-500 text-slate-50 py-4 px-10"
+            href="">Contactanos</a
+          >
+        </div>
+      </article>
+    </section>
+  </main>
+</Layout>
