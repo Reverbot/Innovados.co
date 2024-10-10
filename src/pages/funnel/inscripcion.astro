@@ -2,44 +2,120 @@
 import Layout from "../../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import funnel2 from "/public/funnel-2.webp";
+
+const beneficios = [
+  {
+    icon: "/icons/crown.svg",
+    title: "Acceso Exclusivo",
+    description: "Obtén acceso prioritario a nuevos productos, servicios y eventos exclusivos."
+  },
+  {
+    icon: "/icons/gift.svg",
+    title: "Beneficios Especiales",
+    description: "Disfruta de descuentos, regalos y ofertas personalizadas solo para miembros VIP."
+  },
+  {
+    icon: "/icons/star.svg",
+    title: "Atención Personalizada",
+    description: "Recibe un trato preferencial y soporte dedicado para todas tus necesidades."
+  }
+];
+
 ---
 
-<Layout title=" inscripción VIP">
-  <main class="bg-cyan-950 md:h-screen">
-    <section class="max-w-6xl mx-auto">
-      <article class="py-20 px-10 md:px-0 grid gap-20 md:grid-cols-2">
+<Layout title="Inscripción VIP | Experiencia Exclusiva">
+  <main class="bg-cyan-950 text-white">
+    <div class="max-w-6xl mx-auto px-4 py-8">
+      <a href="/" class="inline-flex items-center text-cyan-300 hover:text-cyan-100 transition-colors mb-6">
+        <img src="/icons/arrow-left.svg" alt="Flecha izquierda" class="w-5 h-5 mr-2" />
+        Volver a la página principal
+      </a>
+
+      <section class="grid gap-20 md:grid-cols-2 items-center py-12">
         <Image
           transition:name="fade-img2"
           src={funnel2}
-          alt="Funnel 1"
-          class="border-x-[24px] border-t-[24px] border-cyan-700 rounded-lg"
+          alt="Inscripción VIP"
+          class="rounded-lg shadow-2xl"
         />
-        <div class="flex flex-col gap-5 ml-3 mt-4 md:mt-0">
-          <h2
+        <div class="flex flex-col gap-6">
+          <h1
             transition:name="fade-text2"
-            class="mb-10 font-extrabold text-3xl text-center md:text-5xl bg-gradient-to-r from-cyan-600 to-slate-50 text-transparent bg-clip-text"
+            class="font-extrabold text-4xl md:text-5xl bg-gradient-to-r from-cyan-400 to-white text-transparent bg-clip-text"
           >
-            inscripción VIP
-          </h2>
-          <p class="mb-5">
-            Ofrecemos opciones de registro gratuito que atraen a más usuarios y
-            expanden tu base de clientes potenciales.
+            Inscripción VIP
+          </h1>
+          <p class="text-lg text-cyan-100">
+            Únete a nuestro exclusivo programa VIP y disfruta de beneficios premium, atención personalizada y acceso prioritario a nuestros mejores productos y servicios.
           </p>
-          <p class="mb-5">
-            Ofrecemos opciones de registro gratuito que atraen a más usuarios y
-            expanden tu base de clientes potenciales.
-          </p>
-          <p class="mb-10">
-            Ofrecemos opciones de registro gratuito que atraen a más usuarios y
-            expanden tu base de clientes potenciales.
-          </p>
-
           <a
-            class="bg-gradient-to-r text-center rounded-full from-cyan-900 via-cyan-800 to-cyan-500 bg-no-repeat bg-[position:_100%_100%] hover:bg-[position:_0%_0%] bg-[size:_200%] transition-all duration-500 text-slate-50 py-4 px-10"
-            href="">Contactanos</a
+            href="#contacto"
+            class="bg-gradient-to-r text-center rounded-full from-cyan-600 to-cyan-400 hover:from-cyan-500 hover:to-cyan-300 transition-all duration-300 text-cyan-950 font-bold py-4 px-10 self-start"
           >
+            Conviértete en VIP ahora
+          </a>
         </div>
-      </article>
-    </section>
+      </section>
+
+      <section class="py-16">
+        <h2 class="text-3xl font-bold text-center mb-12">Beneficios VIP</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          {beneficios.map(({ icon, title, description }) => (
+            <div class="bg-cyan-900 p-6 rounded-lg shadow-lg">
+              <img src={icon} alt={title} class="w-12 h-12 text-cyan-300 mb-4" />
+              <h3 class="text-xl font-semibold mb-2">{title}</h3>
+              <p class="text-cyan-100">{description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="py-16">
+        <h2 class="text-3xl font-bold text-center mb-8">Cómo funciona nuestra membresía VIP</h2>
+        <ol class="space-y-6">
+          <li class="flex items-start">
+            <span class="bg-cyan-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">1</span>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Inscripción sencilla</h3>
+              <p class="text-cyan-100">Completa nuestro formulario VIP y elige el plan que mejor se adapte a tus necesidades.</p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <span class="bg-cyan-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">2</span>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Acceso inmediato</h3>
+              <p class="text-cyan-100">Recibe tus credenciales VIP y comienza a disfrutar de beneficios exclusivos al instante.</p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <span class="bg-cyan-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">3</span>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Experiencia personalizada</h3>
+              <p class="text-cyan-100">Disfruta de un servicio a medida, ofertas exclusivas y atención prioritaria en cada interacción.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="contacto" class="py-16 bg-cyan-900 rounded-lg p-8 mt-16">
+        <h2 class="text-3xl font-bold text-center mb-8">¿Listo para una experiencia VIP?</h2>
+        <p class="text-center text-lg mb-8">Completa el formulario y un asesor VIP te contactará para guiarte en el proceso de inscripción.</p>
+        <form class="max-w-lg mx-auto space-y-4">
+          <input type="text" placeholder="Nombre" class="w-full p-3 rounded bg-cyan-800 text-white placeholder-cyan-300" />
+          <input type="email" placeholder="Email" class="w-full p-3 rounded bg-cyan-800 text-white placeholder-cyan-300" />
+          <select class="w-full p-3 rounded bg-cyan-800 text-white">
+            <option value="">Selecciona tu plan VIP</option>
+            <option value="silver">Silver</option>
+            <option value="gold">Gold</option>
+            <option value="platinum">Platinum</option>
+          </select>
+          <textarea placeholder="Mensaje o preguntas" rows="4" class="w-full p-3 rounded bg-cyan-800 text-white placeholder-cyan-300"></textarea>
+          <button type="submit" class="w-full bg-gradient-to-r from-cyan-500 to-cyan-300 text-cyan-900 font-bold py-3 rounded hover:from-cyan-400 hover:to-cyan-200 transition-all duration-300">
+            Solicitar inscripción VIP
+          </button>
+        </form>
+      </section>
+    </div>
   </main>
 </Layout>
+---

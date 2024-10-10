@@ -1,0 +1,37 @@
+---
+import { Image } from "astro:assets";
+
+export interface Props {
+  src: ImageMetadata;
+  alt: string;
+  number: string;
+  title: string;
+  description: string;
+  href: string;
+}
+
+const { src, alt, number, title, description, href } = Astro.props;
+---
+
+<article class="group">
+  <a href={href} class="block overflow-hidden rounded-lg transition-all duration-300 hover:shadow-xl">
+    <div class="relative">
+      <Image
+        src={src}
+        alt={alt}
+        class="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+        transition:name={`fade-img${number}`}
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-cyan-900 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-70"></div>
+    </div>
+    <div class="bg-cyan-700 p-6 transform translate-y-0 transition-transform duration-300 group-hover:-translate-y-1">
+      <div class="flex items-center gap-5 mb-4">
+        <span class="text-6xl font-bold text-cyan-300">{number}</span>
+        <h3 class="text-2xl font-bold text-white" transition:name={`fade-text${number}`}>
+          {title}
+        </h3>
+      </div>
+      <p class="text-cyan-100">{description}</p>
+    </div>
+  </a>
+</article>

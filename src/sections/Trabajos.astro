@@ -1,52 +1,48 @@
 ---
 import { Image } from "astro:assets";
+import TrabajoCard from "../components/TrabajoCard.astro";
 import trabajo1 from "/public/trabajos/trabajo-1.webp";
 import trabajo2 from "/public/trabajos/trabajo-2.webp";
 import trabajo3 from "/public/trabajos/trabajo-3.webp";
 import trabajo4 from "/public/trabajos/trabajo-4.webp";
+
+const trabajos = [
+  { src: trabajo1, alt: "Proyecto E-commerce" },
+  { src: trabajo2, alt: "Rediseño de Marca" },
+  { src: trabajo3, alt: "Aplicación Móvil" },
+  { src: trabajo4, alt: "Campaña de Marketing" },
+];
 ---
 
 <section
   id="trabajos"
-  class="mx-auto py-20 bg-[length:500px_500px] bg-repeat-x bg-center bg-cyan-950 px-5 md:px-24 bg-[url('data:image/svg+xml;base64,PHN2ZyAgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA2KSIgaGVpZ2h0PSI1NnB4IiB3aWR0aD0iNTZweCIgdmlld0JveD0iMCAwIDU2IDU2IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yOCwyOFY1NkgwVjI4Wk01NiwwVjI4SDI4VjBaIi8+PC9zdmc+')]"
+  class="mx-auto py-20 bg-cyan-950 px-5 md:px-24"
 >
-  <div class="max-w-6xl mx-auto">
-    <h2
-      class="font-extrabold text-3xl text-center md:text-5xl bg-gradient-to-r from-cyan-600 to-slate-50 text-transparent bg-clip-text"
-    >
-      Nuestros trabajos recientes
-    </h2>
-    <p class="text-center">Explora nuestros proyectos más recientes y descubre cómo hemos ayudado a otros negocios a alcanzar el éxito online.</p>
+  <div class="max-w-6xl mx-auto relative">
+    <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyAgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA2KSIgaGVpZ2h0PSI1NnB4IiB3aWR0aD0iNTZweCIgdmlld0JveD0iMCAwIDU2IDU2IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yOCwyOFY1NkgwVjI4Wk01NiwwVjI4SDI4VjBaIi8+PC9zdmc+')] opacity-10"></div>
+    <div class="relative z-10">
+      <h2
+        class="font-extrabold text-3xl text-center mb-4 md:text-5xl bg-gradient-to-r from-cyan-400 to-white text-transparent bg-clip-text"
+      >
+        Nuestros trabajos recientes
+      </h2>
+      <p class="text-center text-cyan-100 max-w-2xl mx-auto mb-12">
+        Explora nuestros proyectos más recientes y descubre cómo hemos ayudado a otros negocios a alcanzar el éxito online.
+      </p>
 
-    <ul class="grid md:grid-cols-2 gap-10 py-20">
-      <li>
-        <Image
-          src={trabajo1}
-          alt={"trabajo-1"}
-          class="border-x-[24px] border-t-[24px] border-cyan-700 rounded-lg"
-        />
-      </li>
-      <li>
-        <Image
-          src={trabajo2}
-          alt={"trabajo-2"}
-          class="border-x-[24px] border-t-[24px] border-cyan-700 rounded-lg"
-        />
-      </li>
-      <li>
-        <Image
-          src={trabajo3}
-          alt={"trabajo-3"}
-          class="border-x-[24px] border-t-[24px] border-cyan-700 rounded-lg"
-        />
-      </li>
-      <li>
-        <Image
-          src={trabajo4}
-          alt={"trabajo-4"}
-          class="border-x-[24px] border-t-[24px] border-cyan-700 rounded-lg"
-        />
-      </li>
-    </ul>
+      <ul class="grid md:grid-cols-2 gap-10">
+        {trabajos.map((trabajo) => (
+          <TrabajoCard src={trabajo.src} alt={trabajo.alt} />
+        ))}
+      </ul>
+    </div>
   </div>
 </section>
+
+<style>
+  #trabajos {
+    background-size: 500px 500px;
+    background-repeat: repeat;
+    background-position: center;
+  }
+</style>

@@ -1,105 +1,82 @@
-<section id="servicios" class="max-w-6xl mx-auto py-20">
-  <h2
-    class="font-extrabold text-3xl text-center mb-4 md:text-5xl bg-gradient-to-r from-cyan-600 to-gray-950 text-transparent bg-clip-text"
-  >
-    Nuestros servicios de calidad
-  </h2>
-  <ul class="text-slate-800 mt-10 mx-5 transition-servicios">
-    <li
-      class="border-cyan-600 items-center border-b py-10 pl-5 grid gap-2 md:grid-cols-2 bg-gradient-to-r hover:from-cyan-600 ease-in-out hover:to-gray-950 hover:text-slate-50 hover:shadow-lg transition-all duration-300"
-    >
-      <div>
-        <span class="text-3xl mr-2 font-bold text-cyan-900">01</span><span
-          class="text-3xl font-bold">Desarrollo Web</span
-        >
-      </div>
-      <p>
-      Creamos sitios web modernos, funcionales y optimizados para convertir visitantes en clientes.
-      </p>
-    </li>
-    <li
-      class="border-cyan-600 items-center border-b py-10 pl-5 grid gap-2 md:grid-cols-2 hover:bg-gradient-to-r hover:from-cyan-600 ease-in-out hover:to-gray-950 hover:text-slate-50 hover:shadow-lg transition-all duration-300"
-    >
-      <div>
-        <span class="text-3xl mr-2 font-bold text-cyan-900">02</span><span
-          class="text-3xl font-bold">Copywriting</span
-        >
-      </div>
-      <p>
-       Desarrollamos textos persuasivos y estratégicos que capturan la atención y aumentan tus ventas.
-      </p>
-    </li>
-    <li
-      class="border-cyan-600 items-center border-b py-10 pl-5 grid gap-2 md:grid-cols-2 hover:bg-gradient-to-r hover:from-cyan-600 ease-in-out hover:to-gray-950 hover:text-slate-50 hover:shadow-lg transition-all duration-300"
-    >
-      <div>
-        <span class="text-3xl mr-2 font-bold text-cyan-900">03</span><span
-          class="text-3xl font-bold">Email Marketing</span
-        >
-      </div>
-      <p>
-        Diseñamos campañas de email marketing que fidelizan clientes y potencian tus ingresos.
-      </p>
-    </li>
-    <li
-      class="border-cyan-600 items-center border-b py-10 pl-5 grid gap-2 md:grid-cols-2 hover:bg-gradient-to-r hover:from-cyan-600 ease-in-out hover:to-gray-950 hover:text-slate-50 hover:shadow-lg transition-all duration-300"
-    >
-      <div>
-        <span class="text-3xl mr-2 font-bold text-cyan-900">04</span><span
-          class="text-3xl font-bold">SEO</span
-        >
-      </div>
-      <p>
-       Optimizamos tu sitio web para mejorar su visibilidad en los motores de búsqueda y atraer más tráfico orgánico.
-      </p>
-    </li>
-    <li
-      class="border-cyan-600 items-center border-b py-10 pl-5 grid gap-2 md:grid-cols-2 hover:bg-gradient-to-r hover:from-cyan-600 ease-in-out hover:to-gray-950 hover:text-slate-50 hover:shadow-lg transition-all duration-300"
-    >
-      <div>
-        <span class="text-3xl mr-2 font-bold text-cyan-900">05</span><span
-          class="text-3xl font-bold">Generación de Leads</span
-        >
-      </div>
-      <p>
-        Implementamos estrategias efectivas para captar leads cualificados y aumentar tu base de clientes.
-      </p>
-    </li>
-    <li
-      class="border-cyan-600 items-center border-b py-10 pl-5 grid gap-2 md:grid-cols-2 hover:bg-gradient-to-r hover:from-cyan-600 ease-in-out hover:to-gray-950 hover:text-slate-50 hover:shadow-lg transition-all duration-300"
-    >
-      <div>
-        <span class="text-3xl mr-2 font-bold text-cyan-900">06</span><span
-          class="text-3xl font-bold">Funnels de Ventas</span
-        >
-      </div>
-      <p>
-       Construimos funnels de ventas optimizados para maximizar la conversión en cada etapa del proceso.
-      </p>
-    </li>
-    <li
-      class="border-cyan-600 items-center border-b py-10 pl-5 grid gap-2 md:grid-cols-2 hover:bg-gradient-to-r hover:from-cyan-600 ease-in-out hover:to-gray-950 hover:text-slate-50 hover:shadow-lg transition-all duration-300"
-    >
-      <div>
-        <span class="text-3xl mr-2 font-bold text-cyan-900">07</span><span
-          class="text-3xl font-bold">Integraciones</span
-        >
-      </div>
-      <p>
-      Integramos diversas herramientas y plataformas para mejorar la eficiencia y funcionalidad de tu sitio web.
-      </p>
-    </li>
-    <li
-      class="border-cyan-600 items-center border-b py-10 pl-5 grid gap-2 md:grid-cols-2 hover:bg-gradient-to-r hover:from-cyan-600 ease-in-out hover:to-gray-950 hover:text-slate-50 hover:shadow-lg transition-all duration-300"
-    >
-      <div>
-        <span class="text-3xl mr-2 font-bold text-cyan-900">08</span><span
-          class="text-3xl font-bold">Chekouts Personalizados</span
-        >
-      </div>
-      <p>
-       Desarrollamos sistemas de pago personalizados que facilitan la compra y mejoran la experiencia del usuario.
-      </p>
-    </li>
-  </ul>
-</section>
+---
+const servicios = [
+  { id: '01', titulo: 'Desarrollo Web', descripcion: 'Creamos sitios web modernos, funcionales y optimizados para convertir visitantes en clientes.' },
+  { id: '02', titulo: 'Copywriting', descripcion: 'Desarrollamos textos persuasivos y estratégicos que capturan la atención y aumentan tus ventas.' },
+  { id: '03', titulo: 'Email Marketing', descripcion: 'Diseñamos campañas de email marketing que fidelizan clientes y potencian tus ingresos.' },
+  { id: '04', titulo: 'SEO', descripcion: 'Optimizamos tu sitio web para mejorar su visibilidad en los motores de búsqueda y atraer más tráfico orgánico.' },
+  { id: '05', titulo: 'Generación de Leads', descripcion: 'Implementamos estrategias efectivas para captar leads cualificados y aumentar tu base de clientes.' },
+  { id: '06', titulo: 'Funnels de Ventas', descripcion: 'Construimos funnels de ventas optimizados para maximizar la conversión en cada etapa del proceso.' },
+  { id: '07', titulo: 'Integraciones', descripcion: 'Integramos diversas herramientas y plataformas para mejorar la eficiencia y funcionalidad de tu sitio web.' },
+  { id: '08', titulo: 'Checkouts Personalizados', descripcion: 'Desarrollamos sistemas de pago personalizados que facilitan la compra y mejoran la experiencia del usuario.' },
+];
+---
+
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Nuestros Servicios</title>
+</head>
+<body class="min-h-screen bg-gray-100">
+    <section id="servicios" class="max-w-6xl mx-auto py-20">
+        <h2 class="font-extrabold text-3xl text-center mb-4 md:text-5xl bg-gradient-to-r from-cyan-600 to-gray-950 text-transparent bg-clip-text">
+            Nuestros servicios de calidad
+        </h2>
+        <ul class="text-slate-800 mt-10 mx-5 transition-servicios">
+            {servicios.map((servicio) => (
+                <li class="border-cyan-600 items-center border-b py-10 pl-5 grid gap-2 md:grid-cols-2">
+                    <div>
+                        <span class="text-3xl mr-2 font-bold text-cyan-900">{servicio.id}</span>
+                        <span class="text-3xl font-bold">{servicio.titulo}</span>
+                    </div>
+                    <p>{servicio.descripcion}</p>
+                </li>
+            ))}
+        </ul>
+    </section>
+</body>
+</html>
+
+<style>
+    .transition-servicios li {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .transition-servicios li::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to right, #0891b2, #030712);
+        opacity: 0;
+        transition: opacity 300ms ease-in-out;
+    }
+
+    .transition-servicios li:hover::before {
+        opacity: 1;
+    }
+
+    .transition-servicios li > div,
+    .transition-servicios li > p {
+        position: relative;
+        z-index: 10;
+        transition: transform 300ms ease-in-out;
+    }
+
+    .transition-servicios li:hover > div,
+    .transition-servicios li:hover > p {
+        transform: translateY(-4px);
+    }
+
+    .transition-servicios li span,
+    .transition-servicios li p {
+        transition: color 300ms ease-in-out;
+    }
+
+    .transition-servicios li:hover span,
+    .transition-servicios li:hover p {
+        color: #f8fafc;
+    }
+</style>

@@ -1,104 +1,68 @@
 ---
 import { Image } from "astro:assets";
+import FunnelCard from "../components/FunnelCard.astro";
 import funnel1 from "/public/funnel-1.webp";
 import funnel2 from "/public/funnel-2.webp";
 import funnel3 from "/public/funnel-3.webp";
+
+const funnels = [
+  {
+    src: funnel1,
+    alt: "Funnel de Registro Gratis",
+    number: "1",
+    title: "Registro Gratis",
+    description: "Ofrecemos opciones de registro gratuito que atraen a más usuarios y expanden tu base de clientes potenciales.",
+    href: "/funnel/registro"
+  },
+  {
+    src: funnel2,
+    alt: "Funnel de Inscripción VIP",
+    number: "2",
+    title: "Inscripción VIP",
+    description: "Creamos programas de inscripción VIP para tus productos o servicios más exclusivos, aumentando el valor percibido y la lealtad del cliente.",
+    href: "/funnel/inscripcion"
+  },
+  {
+    src: funnel3,
+    alt: "Funnel de Upsell",
+    number: "3",
+    title: "Vender un producto más caro",
+    description: "Desarrollamos estrategias para upselling que incrementan el valor de cada transacción.",
+    href: "/funnel/upsell"
+  }
+];
 ---
 
 <section
   id="funnels"
-  class="mx-auto py-20 bg-[length:500px_500px] bg-repeat-x bg-center bg-cyan-950 px-5 md:px-24 bg-[url('data:image/svg+xml;base64,PHN2ZyAgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA2KSIgaGVpZ2h0PSI1NnB4IiB3aWR0aD0iNTZweCIgdmlld0JveD0iMCAwIDU2IDU2IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yOCwyOFY1NkgwVjI4Wk01NiwwVjI4SDI4VjBaIi8+PC9zdmc+')]"
+  class="mx-auto py-20 bg-cyan-950 px-5 md:px-24"
 >
-  <div class="max-w-6xl mx-auto">
-    <h2
-      class="font-extrabold text-3xl text-center md:text-5xl bg-gradient-to-r from-cyan-600 to-slate-50 text-transparent bg-clip-text"
-    >
-      Creamos Funnels que convierten
-    </h2>
+  <div class="max-w-6xl mx-auto relative">
+    <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyAgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA2KSIgaGVpZ2h0PSI1NnB4IiB3aWR0aD0iNTZweCIgdmlld0JveD0iMCAwIDU2IDU2IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yOCwyOFY1NkgwVjI4Wk01NiwwVjI4SDI4VjBaIi8+PC9zdmc+')] opacity-10"></div>
+    <div class="relative z-10">
+      <h2
+        class="font-extrabold text-3xl text-center mb-4 md:text-5xl bg-gradient-to-r from-cyan-400 to-white text-transparent bg-clip-text"
+      >
+        Creamos Funnels que convierten
+      </h2>
+      <p class="text-center text-cyan-100 max-w-2xl mx-auto mb-12">
+        Nuestros funnels están diseñados para maximizar las conversiones y aumentar tus ingresos en cada etapa del proceso de venta.
+      </p>
 
-    <div class="my-20 grid gap-20 md:grid-cols-2">
-      <a href="/funnel/registro">
-        <article class="mb-10">
-          <Image
-            transition:name="fade-img"
-            src={funnel1}
-            alt="Funnel 1"
-            class="md:w-96 border-x-[24px] border-t-[24px] border-cyan-700 rounded-lg"
-          />
-          <div
-            class="flex items-center gap-5 ml-3 order-first md:order-last mt-4 md:mt-0"
-          >
-            <span class="text-7xl mr-2 font-bold text-cyan-500">1</span>
-            <div>
-              <h3
-                transition:name="fade-text"
-                class="text-3xl font-bold md:my-5"
-              >
-                Registro Gratis
-              </h3>
-              <p class="md:w-72">
-                Ofrecemos opciones de registro gratuito que atraen a más
-                usuarios y expanden tu base de clientes potenciales.
-              </p>
-            </div>
-          </div>
-        </article>
-      </a>
-      <article class="mb-10">
-        <a href="/funnel/inscripcion">
-          <Image
-            transition:name="fade-img2"
-            src={funnel2}
-            alt="Funnel 1"
-            class="md:w-96 border-x-[24px] border-t-[24px] border-cyan-700 rounded-lg"
-          />
-          <div
-            class="flex items-center gap-5 ml-3 order-first md:order-last mt-4 md:mt-0"
-          >
-            <span class="text-7xl mr-2 font-bold text-cyan-500">2</span>
-            <div>
-              <h3
-                transition:name="fade-text2"
-                class="text-3xl font-bold md:my-5"
-              >
-                inscripción VIP
-              </h3>
-              <p class="md:w-72">
-                Creamos programas de inscripción VIP para tus productos o
-                servicios más exclusivos, aumentando el valor percibido y la
-                lealtad del cliente.
-              </p>
-            </div>
-          </div>
-        </a>
-      </article>
-      <article class="mb-10">
-        <a href="/funnel/upsell">
-          <Image
-            transition:name="fade-img3"
-            src={funnel3}
-            alt="Funnel 1"
-            class="md:w-96 border-x-[24px] border-t-[24px] border-cyan-700 rounded-lg"
-          />
-          <div
-            class="flex items-center gap-5 ml-3 order-first md:order-last mt-4 md:mt-0"
-          >
-            <span class="text-7xl mr-2 font-bold text-cyan-500">3</span>
-            <div>
-              <h3
-                transition:name="fade-text3"
-                class="text-3xl font-bold md:my-5"
-              >
-                Vender un producto más caro
-              </h3>
-              <p class="md:w-72">
-                Desarrollamos estrategias para upselling que incrementan el
-                valor de cada transacción.
-              </p>
-            </div>
-          </div>
-        </a>
-      </article>
+      <div class="grid gap-10 md:grid-cols-3">
+        {funnels.map((funnel) => (
+          <FunnelCard {...funnel} />
+        ))}
+      </div>
     </div>
   </div>
 </section>
+
+<style>
+  #funnels {
+    background-size: 500px 500px;
+    background-repeat: repeat;
+    background-position: center;
+  }
+</style>
+---
