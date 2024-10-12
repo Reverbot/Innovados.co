@@ -1,91 +1,111 @@
----
-import { Image } from "astro:assets";
-import phone from "/public/phone-call.png";
-import email from "/public/email.png";
----
-
-<section
-  class="mx-auto py-20 bg-[length:500px_500px] bg-repeat-x bg-center bg-cyan-950 px-5 md:px-24 bg-[url('data:image/svg+xml;base64,PHN2ZyAgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA2KSIgaGVpZ2h0PSI1NnB4IiB3aWR0aD0iNTZweCIgdmlld0JveD0iMCAwIDU2IDU2IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yOCwyOFY1NkgwVjI4Wk01NiwwVjI4SDI4VjBaIi8+PC9zdmc+')]"
-  id="contacto"
->
-  <div class="max-w-6xl mx-auto">
-    <div class="md:flex md:justify-center flex-2 gap-40 md:my-20 md:mx-5">
-      <form action="https://formspree.io/f/xdkngyrp" method="post" class="flex flex-col mb-20 bg-slate-800 p-10 rounded-lg">
-        <h2
-          class="mb-5 font-bold text-3xl md:text-5xl bg-gradient-to-r from-cyan-600 to-slate-50 text-transparent bg-clip-text"
-        >
-          Trabajemos juntos
-        </h2>
-        <p class="mb-5">
-          Diseñamos y desarrollamos soluciones simples y efectivas que amamos. ¡Hablemos y veamos cómo podemos ayudarte a crecer!
+<footer class="bg-[#f0f6ff] py-20 bg-gradient-to-r from-blue-100 to-blue-200">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <!-- Newsletter -->
+      <!-- <div>
+        <h3 class="text-blue-700 font-bold text-lg mb-3">
+          SUBSCRIBE TO OUR NEWSLETTER AND BLOG
+        </h3>
+        <p class="text-slate-700 mb-5">
+          Stay up-to-date about White Shark Media's news, digital marketing
+          trends, and free resources to help your business grow.
         </p>
-        <div class="md:flex gap-5">
+        <form class="flex items-center bg-white p-2 rounded-full shadow-md">
           <input
-            name="Nombre"
-            type="text"
-            placeholder="Nombre"
-            class="mb-5 w-full placeholder:text-slate-600 bg-slate-200 py-4 px-4 text-slate-600 rounded-sm border-1 border-slate-300"
-          />
-          <input
-            name="Apellido"
-            type="text"
-            placeholder="Apellido"
-            class="mb-5 w-full placeholder:text-slate-600 bg-slate-200 py-4 px-4 text-slate-600 rounded-sm border-1 border-slate-300"
-          />
-        </div>
-        <div class="md:flex gap-5">
-          <input
-            name="Correo"
             type="email"
-            placeholder="Correo Electronico"
-            class="mb-5 w-full placeholder:text-slate-600 bg-slate-200 py-4 px-4 text-slate-600 rounded-sm border-1 border-slate-300"
+            placeholder="Your Email"
+            class="w-full px-4 py-2 text-slate-700 placeholder-slate-400 outline-none"
           />
-          <input
-            name="Telefono"
-            type="tel"
-            placeholder="Telefono"
-            class="mb-5 w-full placeholder:text-slate-600 bg-slate-200 py-4 px-4 text-slate-600 rounded-sm border-1 border-slate-300"
-          />
+          <button
+            type="submit"
+            class="bg-blue-500 text-white rounded-full p-3 hover:bg-blue-700 transition"
+          >
+            ➔
+          </button>
+        </form>
+        <div class="flex space-x-4 mt-5">
+          <a href="#" class="text-blue-500 hover:text-blue-700">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="text-blue-500 hover:text-blue-700">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="#" class="text-blue-500 hover:text-blue-700">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="text-blue-500 hover:text-blue-700">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="text-blue-500 hover:text-blue-700">
+            <i class="fab fa-x-twitter"></i>
+          </a>
         </div>
+      </div> -->
 
-        <textarea
-          name="Mensaje"
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Mensaje"
-          class="mb-5 w-full placeholder:text-slate-600 bg-slate-200 py-4 px-4 text-slate-600 rounded-sm border-1 border-slate-300"
-        ></textarea>
-        <button
-          type="submit"
-          class="bg-gradient-to-r rounded-full from-cyan-900 via-cyan-800 to-cyan-500 bg-no-repeat bg-[position:_100%_100%] hover:bg-[position:_0%_0%] bg-[size:_200%] transition-all duration-500 text-slate-50 py-4 px-10"
-          >Enviar</button
-        >
-      </form>
-      <div class="">
-        <div class="flex gap-4 mb-10">
-          <Image
-            src={phone}
-            alt="telefono"
-            class="w-12 border-2 border-cyan-500 bg-cyan-500 rounded-full p-1"
-          />
-          <div>
-            <h6>Teléfono</h6>
-            <p>+1 (561) 552-0222</p>
-          </div>
-        </div>
-        <div class="flex gap-4">
-          <Image
-            src={email}
-            alt="Correo"
-            class="w-12 border-2 border-cyan-500 bg-cyan-500 rounded-full p-1"
-          />
-          <div>
-            <h6>Correo</h6>
-            <p>contacto@innovados.co</p>
-          </div>
-        </div>
+      <!-- Menú -->
+      <div>
+        <h3 class="text-blue-700 font-bold text-lg mb-3">MENÚ</h3>
+        <ul class="space-y-2">
+          <li>
+            <a href="#servicios" class="text-slate-700 hover:underline"
+              >Servicios</a
+            >
+          </li>
+          <li>
+            <a href="#funnels" class="text-slate-700 hover:underline">Funnels</a
+            >
+          </li>
+          <li>
+            <a href="#email" class="text-slate-700 hover:underline"
+              >Email Marketing</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Ubicaciones -->
+      <!-- <div>
+        <h3 class="text-blue-700 font-bold text-lg mb-3">UBICACIONES</h3>
+        <p class="text-slate-700">
+          25 SW 9th St CU-7<br />Miami, Florida 33131<br />United States
+        </p>
+        <p class="text-slate-700 mt-3">
+          Edificio Eco,<br />Rotonda Universitaria, 200 mts al norte, 50 mts al
+          este 6to y 7mo piso<br />Managua, Nicaragua
+        </p>
+      </div> -->
+
+      <!-- Contacto y Soporte -->
+      <div>
+        <h3 class="text-blue-700 font-bold text-lg mb-3">
+          Información de contacto
+        </h3>
+        <p class="text-slate-700">contacto@innovados.co</p>
       </div>
     </div>
+
+    <!-- Separador -->
+    <div class="border-t border-slate-300 mt-10 pt-5 items-center">
+      <p class="text-slate-700 text-center">
+        Lideramos tu camino al éxito digital ©2024 Innovados.co®
+        <!-- <a href="#" class="hover:underline">Términos y condiciones</a> |
+        <a href="#" class="hover:underline">Política de privacidad</a> -->
+      </p>
+
+      <!-- Logos -->
+      <!-- <div class="flex space-x-4 mt-5 md:mt-0">
+        <img src="https://via.placeholder.com/100x30" alt="Google Partner" />
+        <img
+          src="https://via.placeholder.com/100x30"
+          alt="Microsoft Advertising"
+        />
+        <img src="https://via.placeholder.com/100x30" alt="Amazon Ads" />
+        <img src="https://via.placeholder.com/100x30" alt="Trustpilot" />
+        <img
+          src="https://via.placeholder.com/100x30"
+          alt="Google Business Profile"
+        />
+      </div> -->
+    </div>
   </div>
-</section>
+</footer>

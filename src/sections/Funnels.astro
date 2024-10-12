@@ -11,49 +11,51 @@ const funnels = [
     alt: "Funnel de Registro Gratis",
     number: "1",
     title: "Registro Gratis",
-    description: "Ofrecemos opciones de registro gratuito que atraen a más usuarios y expanden tu base de clientes potenciales.",
-    href: "/funnel/registro"
+    description:
+      "Ofrecemos opciones de registro gratuito que atraen a más usuarios y expanden tu base de clientes potenciales.",
+    href: "/funnel/registro",
   },
   {
     src: funnel2,
     alt: "Funnel de Inscripción VIP",
     number: "2",
     title: "Inscripción VIP",
-    description: "Creamos programas de inscripción VIP para tus productos o servicios más exclusivos, aumentando el valor percibido y la lealtad del cliente.",
-    href: "/funnel/inscripcion"
+    description:
+      "Creamos programas de inscripción VIP para tus productos o servicios más exclusivos, aumentando el valor percibido y la lealtad del cliente.",
+    href: "/funnel/inscripcion",
   },
   {
     src: funnel3,
     alt: "Funnel de Upsell",
     number: "3",
     title: "Vender un producto más caro",
-    description: "Desarrollamos estrategias para upselling que incrementan el valor de cada transacción.",
-    href: "/funnel/upsell"
-  }
+    description:
+      "Desarrollamos estrategias para upselling que incrementan el valor de cada transacción.",
+    href: "/funnel/upsell",
+  },
 ];
 ---
 
-<section
-  id="funnels"
-  class="mx-auto py-20 bg-cyan-950 px-5 md:px-24"
->
+<section id="funnels" class="mx-auto py-20 bg-[#f0f6ff] px-5 md:px-24">
   <div class="max-w-6xl mx-auto relative">
-    <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyAgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA2KSIgaGVpZ2h0PSI1NnB4IiB3aWR0aD0iNTZweCIgdmlld0JveD0iMCAwIDU2IDU2IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yOCwyOFY1NkgwVjI4Wk01NiwwVjI4SDI4VjBaIi8+PC9zdmc+')] opacity-10"></div>
+    <div
+      class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyAgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA2KSIgaGVpZ2h0PSI1NnB4IiB3aWR0aD0iNTZweCIgdmlld0JveD0iMCAwIDU2IDU2IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yOCwyOFY1NkgwVjI4Wk01NiwwVjI4SDI4VjBaIi8+PC9zdmc+')] opacity-10"
+    >
+    </div>
     <div class="relative z-10">
       <h2
-        class="font-extrabold text-3xl text-center mb-4 md:text-5xl bg-gradient-to-r from-cyan-400 to-white text-transparent bg-clip-text"
+        class="font-extrabold text-3xl text-center mb-4 md:text-5xl text-slate-700"
       >
         Creamos Funnels que convierten
       </h2>
-      <p class="text-center text-cyan-100 max-w-2xl mx-auto mb-12">
-        Nuestros funnels están diseñados para maximizar las conversiones y aumentar tus ingresos en cada etapa del proceso de venta.
+      <p class="text-center text-slate-700 max-w-2xl mx-auto mb-12">
+        Nuestros funnels están diseñados para maximizar las conversiones y
+        aumentar tus ingresos en cada etapa del proceso de venta.
       </p>
 
-      <div class="grid gap-10 md:grid-cols-3">
-        {funnels.map((funnel) => (
-          <FunnelCard {...funnel} />
-        ))}
-      </div>
+      <ul class="flex flex-col md:gap-10">
+        {funnels.map((funnel) => <FunnelCard {...funnel} />)}
+      </ul>
     </div>
   </div>
 </section>

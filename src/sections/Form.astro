@@ -1,0 +1,117 @@
+---
+
+---
+
+<section class="mx-auto py-20 bg-[#f0f6ff]" id="contacto">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="md:flex md:justify-center gap-40">
+      <form
+        action="https://formspree.io/f/xdkngyrp"
+        method="post"
+        class="flex flex-col bg-blue-100 p-5 md:p-10 rounded-lg shadow-lg space-y-6"
+      >
+        <h2 class="text-center text-blue-700 font-bold text-3xl md:text-5xl">
+          ¿No sabes dónde empezar?
+        </h2>
+        <p class="text-center text-slate-700 mx-auto md:w-2/3">
+          Diseñamos y desarrollamos soluciones simples y efectivas que amamos.
+          ¡Hablemos y veamos cómo podemos ayudarte a crecer!
+        </p>
+
+        <div class="md:flex gap-5">
+          <div class="w-full">
+            <label for="Nombre" class="text-slate-700 block mb-2">
+              Nombre <span class="text-red-500">*</span>
+            </label>
+            <input
+              id="Nombre"
+              name="Nombre"
+              type="text"
+              required
+              placeholder="Nombre"
+              class="w-full placeholder:text-slate-400 bg-[#f0f6ff] py-2 px-2 text-slate-600
+                     rounded-xl shadow-sm border border-slate-300 focus:ring-2 focus:ring-blue-400
+                     focus:outline-none"
+            />
+          </div>
+
+          <div class="w-full">
+            <label
+              for="Apellido"
+              class="text-slate-700 block mb-2 mt-4 md:mt-0"
+            >
+              Apellido <span class="text-red-500">*</span>
+            </label>
+            <input
+              id="Apellido"
+              name="Apellido"
+              type="text"
+              required
+              placeholder="Apellido"
+              class="w-full placeholder:text-slate-400 bg-[#f0f6ff] py-2 px-2 text-slate-600
+                     rounded-xl shadow-sm border border-slate-300 focus:ring-2 focus:ring-blue-400
+                     focus:outline-none"
+            />
+          </div>
+        </div>
+
+        <div class="w-full">
+          <label for="Correo" class="text-slate-700 block mb-2">
+            Correo Electrónico <span class="text-red-500">*</span>
+          </label>
+          <input
+            id="Correo"
+            name="Correo"
+            type="email"
+            required
+            placeholder="Correo Electrónico"
+            class="w-full placeholder:text-slate-400 bg-[#f0f6ff] py-2 px-2 text-slate-600
+                   rounded-xl shadow-sm border border-slate-300 focus:ring-2 focus:ring-blue-400
+                   focus:outline-none"
+          />
+        </div>
+
+        <div class="w-full">
+          <label for="Telefono" class="text-slate-700 block mb-2">
+            Teléfono <span class="text-red-500">*</span>
+          </label>
+          <input
+            id="Telefono"
+            name="Telefono"
+            type="tel"
+            required
+            placeholder="Teléfono"
+            class="w-full placeholder:text-slate-400 bg-[#f0f6ff] py-2 px-2 text-slate-600
+                   rounded-xl shadow-sm border border-slate-300 focus:ring-2 focus:ring-blue-400
+                   focus:outline-none"
+          />
+        </div>
+
+        <div class="w-full">
+          <label for="Mensaje" class="text-slate-700 block mb-2">
+            Mensaje <span class="text-red-500">*</span>
+          </label>
+          <textarea
+            id="Mensaje"
+            name="Mensaje"
+            required
+            rows="5"
+            placeholder="Escribe tu mensaje aquí"
+            class="w-full placeholder:text-slate-400 bg-[#f0f6ff] py-2 px-2 text-slate-600
+                   rounded-xl shadow-sm border border-slate-300 focus:ring-2 focus:ring-blue-400
+                   focus:outline-none"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="bg-blue-600 text-white font-bold py-3 px-10 rounded-full
+                 hover:bg-blue-700 hover:shadow-md transition-all duration-300
+                 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-400"
+        >
+          Contáctanos
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

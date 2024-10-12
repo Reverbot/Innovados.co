@@ -3,9 +3,7 @@ import { Image } from "astro:assets";
 import logo from "/public/innovados.webp";
 ---
 
-<header
-  class="md:py-5 z-10 sticky top-0 bg-[length:500px_500px] bg-repeat-x bg-center bg-cyan-950"
->
+<header class="md:py-5 z-10 text-slate-800 bg-[#f0f6ff]">
   <nav
     class="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 lg:px-20"
     aria-label="Global"
@@ -13,7 +11,9 @@ import logo from "/public/innovados.webp";
     <div class="flex lg:flex-1">
       <a href="#" class="-m-1.5 p-1.5">
         <span class="sr-only">InnovaDos.co</span>
-        <a href="/"><Image src={logo} alt="Innovados" class="h-10 w-auto" /></a>
+        <a href="/"
+          ><Image src={logo} alt="Innovados" class="md:h-10 h-5 w-auto" /></a
+        >
       </a>
     </div>
     <div class="flex lg:hidden">
@@ -41,29 +41,21 @@ import logo from "/public/innovados.webp";
     <div class="hidden lg:flex lg:gap-x-12 items-center">
       <div class="relative"></div>
 
-      <a
-        href="#servicios"
-        class="text-sm font-semibold leading-6 hover:text-cyan-500 text-slate-300"
+      <a href="#servicios" class="font-semibold leading-6 hover:text-cyan-500"
         >Servicios</a
       >
-      <a
-        href="#funnels"
-        class="text-sm font-semibold leading-6 hover:text-cyan-500 text-slate-300"
+      <a href="#funnels" class="font-semibold leading-6 hover:text-cyan-500"
         >Funnels</a
       >
-      <a
-        href="#email"
-        class="text-sm font-semibold leading-6 hover:text-cyan-500 text-slate-300"
+      <a href="#email" class="font-semibold leading-6 hover:text-cyan-500"
         >Email Marketing</a
       >
-      <a
-        href="#trabajos"
-        class="text-sm font-semibold leading-6 hover:text-cyan-500 text-slate-300"
+      <!-- <a href="#trabajos" class="font-semibold leading-6 hover:text-cyan-500"
         >Trabajos</a
-      >
+      > -->
       <a
         href="#contacto"
-        class="bg-gradient-to-r py-2 px-4 rounded-full from-cyan-900 via-cyan-800 to-cyan-500 bg-no-repeat bg-[position:_100%_100%] hover:bg-[position:_0%_0%] bg-[size:_200%] transition-all duration-500"
+        class="text-white font-semibold bg-gradient-to-r py-2 px-8 rounded-full from-emerald-400 via-sky-500 to-emerald-500 bg-no-repeat bg-[position:_100%_100%] hover:bg-[position:_0%_0%] bg-[size:_200%] transition-all duration-500"
         >Contacto</a
       >
     </div>
@@ -160,7 +152,7 @@ import logo from "/public/innovados.webp";
   });
 </script>
 
-<style>
+<!-- <style>
   header {
     animation: scroll-header linear both;
     animation-timeline: scroll(root);
@@ -183,4 +175,4 @@ import logo from "/public/innovados.webp";
       height: 2rem;
     }
   }
-</style>
+</style> -->

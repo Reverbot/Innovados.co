@@ -14,12 +14,12 @@ const trabajos = [
 ];
 ---
 
-<section
-  id="trabajos"
-  class="mx-auto py-20 bg-cyan-950 px-5 md:px-24"
->
+<section id="trabajos" class="mx-auto py-20 bg-[#f0f6ff] px-5 md:px-24">
   <div class="max-w-6xl mx-auto relative">
-    <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyAgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA2KSIgaGVpZ2h0PSI1NnB4IiB3aWR0aD0iNTZweCIgdmlld0JveD0iMCAwIDU2IDU2IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yOCwyOFY1NkgwVjI4Wk01NiwwVjI4SDI4VjBaIi8+PC9zdmc+')] opacity-10"></div>
+    <div
+      class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyAgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA2KSIgaGVpZ2h0PSI1NnB4IiB3aWR0aD0iNTZweCIgdmlld0JveD0iMCAwIDU2IDU2IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yOCwyOFY1NkgwVjI4Wk01NiwwVjI4SDI4VjBaIi8+PC9zdmc+')] opacity-10"
+    >
+    </div>
     <div class="relative z-10">
       <h2
         class="font-extrabold text-3xl text-center mb-4 md:text-5xl bg-gradient-to-r from-cyan-400 to-white text-transparent bg-clip-text"
@@ -27,13 +27,16 @@ const trabajos = [
         Nuestros trabajos recientes
       </h2>
       <p class="text-center text-cyan-100 max-w-2xl mx-auto mb-12">
-        Explora nuestros proyectos más recientes y descubre cómo hemos ayudado a otros negocios a alcanzar el éxito online.
+        Explora nuestros proyectos más recientes y descubre cómo hemos ayudado a
+        otros negocios a alcanzar el éxito online.
       </p>
 
       <ul class="grid md:grid-cols-2 gap-10">
-        {trabajos.map((trabajo) => (
-          <TrabajoCard src={trabajo.src} alt={trabajo.alt} />
-        ))}
+        {
+          trabajos.map((trabajo) => (
+            <TrabajoCard src={trabajo.src} alt={trabajo.alt} />
+          ))
+        }
       </ul>
     </div>
   </div>
