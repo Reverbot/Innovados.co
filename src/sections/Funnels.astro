@@ -1,5 +1,4 @@
 ---
-import { Image } from "astro:assets";
 import FunnelCard from "../components/FunnelCard.astro";
 import funnel1 from "/public/funnel-1.webp";
 import funnel2 from "/public/funnel-2.webp";
@@ -36,35 +35,22 @@ const funnels = [
 ];
 ---
 
-<section id="funnels" class="mx-auto py-20 bg-[#f0f6ff] px-5 md:px-24">
+<section id="funnels" class="mx-auto py-5 bg-[#f0f6ff] px-5 md:px-24">
   <div class="max-w-6xl mx-auto relative">
-    <div
-      class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyAgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA2KSIgaGVpZ2h0PSI1NnB4IiB3aWR0aD0iNTZweCIgdmlld0JveD0iMCAwIDU2IDU2IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yOCwyOFY1NkgwVjI4Wk01NiwwVjI4SDI4VjBaIi8+PC9zdmc+')] opacity-10"
+    <h2
+      class="font-extrabold text-3xl text-center mb-4 md:text-5xl text-blue-700"
     >
-    </div>
-    <div class="relative z-10">
-      <h2
-        class="font-extrabold text-3xl text-center mb-4 md:text-5xl text-slate-700"
-      >
-        Creamos Funnels que convierten
-      </h2>
-      <p class="text-center text-slate-700 max-w-2xl mx-auto mb-12">
-        Nuestros funnels están diseñados para maximizar las conversiones y
-        aumentar tus ingresos en cada etapa del proceso de venta.
-      </p>
+      Creamos Funnels que convierten
+    </h2>
+    <p class="text-center text-slate-700 max-w-2xl mx-auto mb-12">
+      Nuestros funnels están diseñados para maximizar las conversiones y
+      aumentar tus ingresos en cada etapa del proceso de venta.
+    </p>
 
-      <ul class="flex flex-col md:gap-10">
-        {funnels.map((funnel) => <FunnelCard {...funnel} />)}
-      </ul>
-    </div>
+    <ul class="flex flex-col">
+      {funnels.map((funnel) => <FunnelCard {...funnel} />)}
+    </ul>
   </div>
 </section>
 
-<style>
-  #funnels {
-    background-size: 500px 500px;
-    background-repeat: repeat;
-    background-position: center;
-  }
-</style>
 ---

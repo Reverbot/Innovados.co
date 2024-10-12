@@ -3,67 +3,72 @@ import HeroImage from "../components/HeroImage.astro";
 ---
 
 <section id="email" class="max-w-6xl mx-auto py-20 px-5">
-  <h2 class="font-extrabold text-3xl text-center md:text-5xl text-blue-700">
+  <h2
+    class="font-extrabold text-3xl text-center md:text-5xl text-blue-700 mb-10"
+  >
     Secuencias de correos ganadoras
   </h2>
-  <div class="grid md:grid-cols-2">
-    <ul class="text-slate-800 md:mt-20 mx-5 order-last md:order-first">
-      <li class="mb-4">
+
+  <div class="grid md:grid-cols-2 gap-10 items-center">
+    <!-- Lista de correos -->
+    <ul class="space-y-8 text-slate-800 mx-5 md:mx-0">
+      <li class="flex items-start gap-4">
+        <span class="text-4xl font-bold text-cyan-500">01</span>
         <div>
-          <span class="text-2xl mr-2 font-bold text-cyan-500">01</span><span
-            class="text-2xl font-bold">Emails Promocionales</span
-          >
+          <h3 class="text-2xl font-bold mb-1">Emails Promocionales</h3>
+          <p class="font-light md:w-96">
+            Diseñamos emails promocionales efectivos que captan la atención y
+            generan ventas.
+          </p>
         </div>
-        <p class="font-light mt-3 md:w-96">
-          Diseñamos emails promocionales efectivos que captan la atención y
-          generan ventas.
-        </p>
       </li>
-      <li class="mb-4">
+
+      <li class="flex items-start gap-4">
+        <span class="text-4xl font-bold text-cyan-500">02</span>
         <div>
-          <span class="text-2xl mr-2 font-bold text-cyan-500">02</span><span
-            class="text-2xl font-bold">Newsletters</span
-          >
+          <h3 class="text-2xl font-bold mb-1">Newsletters</h3>
+          <p class="font-light md:w-96">
+            Creamos newsletters informativas y atractivas que mantienen a tus
+            clientes comprometidos con tu marca.
+          </p>
         </div>
-        <p class="font-light mt-3 md:w-96">
-          Creamos newsletters informativas y atractivas que mantienen a tus
-          clientes comprometidos con tu marca.
-        </p>
       </li>
-      <li class="mb-4">
+
+      <li class="flex items-start gap-4">
+        <span class="text-4xl font-bold text-cyan-500">03</span>
         <div>
-          <span class="text-2xl mr-2 font-bold text-cyan-500">03</span><span
-            class="text-2xl font-bold">Correos de Bienvenida</span
-          >
+          <h3 class="text-2xl font-bold mb-1">Correos de Bienvenida</h3>
+          <p class="font-light md:w-96">
+            Desarrollamos correos de bienvenida personalizados para una
+            excelente primera impresión.
+          </p>
         </div>
-        <p class="font-light mt-3 md:w-96">
-          Desarrollamos correos de bienvenida personalizados para una excelente
-          primera impresión.
-        </p>
       </li>
-      <li class="mb-4">
+
+      <li class="flex items-start gap-4">
+        <span class="text-4xl font-bold text-cyan-500">04</span>
         <div>
-          <span class="text-2xl mr-2 font-bold text-cyan-500">04</span><span
-            class="text-2xl font-bold">Correo de carrito abandonado</span
-          >
+          <h3 class="text-2xl font-bold mb-1">Correo de carrito abandonado</h3>
+          <p class="font-light md:w-96">
+            Implementamos correos de carrito abandonado que recuperan ventas
+            perdidas.
+          </p>
         </div>
-        <p class="font-light mt-3 md:w-96">
-          Implementamos correos de carrito abandonado que recuperan ventas
-          perdidas.
-        </p>
       </li>
-      <li class="mb-4">
+
+      <li class="flex items-start gap-4">
+        <span class="text-4xl font-bold text-cyan-500">05</span>
         <div>
-          <span class="text-2xl mr-2 font-bold text-cyan-500">05</span><span
-            class="text-2xl font-bold">Correo con contenido de valor</span
-          >
+          <h3 class="text-2xl font-bold mb-1">Correo con contenido de valor</h3>
+          <p class="font-light md:w-96">
+            Enviamos correos con contenido de valor que educan y fidelizan a tus
+            clientes.
+          </p>
         </div>
-        <p class="font-light mt-3 md:w-96">
-          Enviamos correos con contenido de valor que educan y fidelizan a tus
-          clientes.
-        </p>
       </li>
     </ul>
+
+    <!-- Imagen del héroe -->
     <HeroImage />
   </div>
 </section>
