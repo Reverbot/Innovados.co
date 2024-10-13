@@ -1,0 +1,277 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Image from "astro/components/Image.astro";
+import equipo from "/public/nosotros/equipo.png";
+---
+
+<Layout title="Mejora tu Web y Ventas con Copywriting y Desarrollo Profesional">
+  <section class="bg-[#f0f6ff] py-20 px-5 md:px-20">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-10">
+      <!-- Texto -->
+      <div>
+        <h1
+          class="text-4xl md:text-4xl font-extrabold text-blue-700 mb-5 leading-tight"
+        >
+          Conoce Innovados.co
+        </h1>
+
+        <p class="text-base text-slate-600 mb-10">
+          En Innovados.co combinamos creatividad y estrategia para ofrecer
+          servicios de marketing digital de alto impacto. Nuestra experiencia en
+          SEO, publicidad en redes sociales y servicios creativos permite a las
+          empresas fortalecer su presencia en línea, captar más clientes
+          potenciales y potenciar sus ventas. Somos la agencia digital de
+          confianza para las empresas que buscan sobresalir en el entorno online
+          y alcanzar el éxito con campañas orientadas a resultados.
+        </p>
+        <a
+          href="#contacto"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-2 md:px-8 rounded-full transition duration-300"
+        >
+          Comienza hoy mismo
+        </a>
+      </div>
+
+      <!-- Imagen con decoración -->
+      <div class="">
+        <Image
+          src={equipo}
+          alt="Email Marketing"
+          class="md:mt-0 mt-10 w-3/4 mx-auto"
+        />
+      </div>
+    </div>
+  </section>
+  <section class="bg-blue-100 py-20 px-5">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-blue-700 mb-8 uppercase">
+        NUESTRA EXPERIENCIA incluye
+      </h2>
+    </div>
+
+    <!-- Estadísticas Clave -->
+    <div
+      class="max-w-7xl mx-auto bg-blue-50 rounded-xl p-12 shadow-sm flex flex-col md:flex-row justify-around items-center gap-8 mb-12"
+    >
+      <div class="text-center">
+        <h3 class="text-4xl font-extrabold text-sky-600">100+</h3>
+        <p class="text-blue-900 font-bold mt-2">Emails Enviados por Campaña</p>
+      </div>
+      <div class="text-center">
+        <h3 class="text-4xl font-extrabold text-sky-600">95%</h3>
+        <p class="text-blue-900 font-bold mt-2">
+          Tasa de Satisfacción de Clientes
+        </p>
+      </div>
+      <div class="text-center">
+        <h3 class="text-4xl font-extrabold text-sky-600">50+</h3>
+        <p class="text-blue-900 font-bold mt-2">
+          Clientes en Diversas Industrias
+        </p>
+      </div>
+    </div>
+
+    <!-- Datos de la Empresa -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+      <div class="bg-blue-50 rounded-xl p-8 shadow-sm text-center">
+        <div
+          class="w-12 h-12 mx-auto bg-yellow-100 rounded-full flex items-center justify-center mb-4"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="w-6 h-6 text-yellow-600"
+            ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+              d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"
+            ></path><path d="M16 3v4"></path><path d="M8 3v4"></path><path
+              d="M4 11h16"></path><path d="M11 15h1"></path><path d="M12 15v3"
+            ></path></svg
+          >
+        </div>
+        <h3 class="text-xl font-semibold text-blue-900">Fundada en 2023</h3>
+        <p class="text-gray-600">
+          Enfocados en resultados desde el primer día.
+        </p>
+      </div>
+
+      <div class="bg-blue-50 rounded-xl p-8 shadow-sm text-center">
+        <div
+          class="w-12 h-12 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-4"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="w-6 h-6 text-green-600"
+            ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+              d="M20.94 13.045a9 9 0 1 0 -8.953 7.955"></path><path
+              d="M3.6 9h16.8"></path><path d="M3.6 15h9.4"></path><path
+              d="M11.5 3a17 17 0 0 0 0 18"></path><path
+              d="M12.5 3a16.991 16.991 0 0 1 2.529 10.294"></path><path
+              d="M16 22l5 -5"></path><path d="M21 21.5v-4.5h-4.5"></path></svg
+          >
+        </div>
+        <h3 class="text-xl font-semibold text-blue-900">100% Trabajo Remoto</h3>
+        <p class="text-gray-600">
+          Nuestro equipo trabaja de forma ágil desde cualquier lugar.
+        </p>
+      </div>
+
+      <div class="bg-blue-50 rounded-xl p-8 shadow-sm text-center">
+        <div
+          class="w-12 h-12 mx-auto bg-pink-100 rounded-full flex items-center justify-center mb-4"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="w-6 h-6 text-pink-600"
+            ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+              d="M13 20.693c-.905 .628 -2.36 .292 -2.675 -1.01a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.492 .362 1.716 2.219 .674 3.03"
+            ></path><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path><path
+              d="M17 22l5 -3l-5 -3z"></path></svg
+          >
+        </div>
+        <h3 class="text-xl font-semibold text-blue-900">
+          Automatización Avanzada
+        </h3>
+        <p class="text-gray-600">
+          Usamos herramientas de vanguardia para maximizar la eficiencia.
+        </p>
+      </div>
+
+      <div class="bg-blue-50 rounded-xl p-8 shadow-sm text-center">
+        <div
+          class="w-12 h-12 mx-auto bg-blue-100 rounded-full flex items-center justify-center mb-4"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="w-6 h-6 text-blue-600"
+            ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+              d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path><path
+              d="M8 13h8a4 4 0 1 1 -8 0z"></path></svg
+          >
+        </div>
+        <h3 class="text-xl font-semibold text-blue-900">
+          Equipo Multidisciplinario
+        </h3>
+        <p class="text-gray-600">
+          Redactores, diseñadores y especialistas alineados a tus objetivos.
+        </p>
+      </div>
+
+      <div class="bg-blue-50 rounded-xl p-8 shadow-sm text-center">
+        <div
+          class="w-12 h-12 mx-auto bg-purple-100 rounded-full flex items-center justify-center mb-4"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="w-6 h-6 text-purple-600"
+            ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+              d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path><path
+              d="M3.6 9h16.8"></path><path d="M3.6 15h16.8"></path><path
+              d="M11.5 3a17 17 0 0 0 0 18"></path><path
+              d="M12.5 3a17 17 0 0 1 0 18"></path></svg
+          >
+        </div>
+        <h3 class="text-xl font-semibold text-blue-900">Experiencia Global</h3>
+        <p class="text-gray-600">Clientes en América, Europa y Asia.</p>
+      </div>
+    </div>
+  </section>
+  <section class="bg-blue-50 py-20 px-5">
+    <div class="max-w-6xl mx-auto items-center gap-10">
+      <!-- Título y Caja de Valores -->
+      <div class="flex justify-center">
+        <h2 class="text-4xl font-bold text-blue-700 mb-8 uppercase">
+          Nuestros Valores
+        </h2>
+      </div>
+
+      <!-- Valores Listados -->
+      <div class="grid grid-cols-1 mt-5 md:grid-cols-3 gap-8">
+        <!-- Valor 1 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-md relative h-full min-h-[200px]"
+        >
+          <div
+            class="bg-blue-100 text-blue-600 font-bold py-1 px-4 rounded-full absolute -top-4 left-4 z-10"
+          >
+            CUIDADO
+          </div>
+          <p class="text-gray-600 mt-6">
+            Priorizamos el bienestar de nuestros colaboradores y clientes,
+            asegurándonos de que cada acción contribuya al éxito mutuo.
+          </p>
+        </div>
+
+        <!-- Valor 2 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-md relative h-full min-h-[200px]"
+        >
+          <div
+            class="bg-blue-100 text-blue-600 font-bold py-1 px-4 rounded-full absolute -top-4 left-4 z-10"
+          >
+            DETERMINACIÓN
+          </div>
+          <p class="text-gray-600 mt-6">
+            Nos enfocamos en encontrar soluciones innovadoras, superando
+            desafíos con perseverancia y orientados siempre hacia la excelencia.
+          </p>
+        </div>
+
+        <!-- Valor 3 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-md relative h-full min-h-[200px]"
+        >
+          <div
+            class="bg-green-100 text-green-600 font-bold py-1 px-4 rounded-full absolute -top-4 left-4 z-10"
+          >
+            CREATIVIDAD
+          </div>
+          <p class="text-gray-600 mt-6">
+            Fomentamos ideas originales y soluciones creativas para resolver
+            problemas complejos. Siempre buscamos nuevas perspectivas y formas
+            de mejorar.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
