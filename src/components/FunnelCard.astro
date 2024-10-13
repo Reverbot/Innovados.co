@@ -1,14 +1,11 @@
 ---
 export interface Props {
-  src: ImageMetadata;
-  alt: string;
   number: string;
   title: string;
   description: string;
-  href: string;
 }
 
-const { src, alt, number, title, description, href } = Astro.props;
+const { number, title, description } = Astro.props;
 ---
 
 <li class="p-10 rounded-b-xl">
