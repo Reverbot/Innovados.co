@@ -1,0 +1,336 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Image from "astro/components/Image.astro";
+import email from "/public/email/heroemail.png";
+import circuloemail from "/public/email/circulo-email.png";
+import equipoemail from "/public/email/equipo-email.png";
+---
+
+<!-- Landing Page Structure for Email Marketing --><!-- Header Section -->
+<Layout title="Servicios Profesionales de Copywriting">
+  <!-- Hero: Impacto del Copywriting -->
+  <section class="bg-[#f0f6ff] py-20 px-5 md:px-20">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-10">
+      <!-- Texto -->
+      <div>
+        <h1
+          class="text-4xl md:text-4xl font-extrabold text-blue-700 mb-5 leading-tight"
+        >
+          IMPULSA TU NEGOCIO CON EMAIL MARKETING ESTRATÉGICO
+        </h1>
+        <p class="text-lg font-semibold text-slate-600 mb-5">
+          Diseñamos campañas de email que atraen, comprometen y convierten a tus
+          suscriptores.
+        </p>
+        <p class="text-base text-slate-600 mb-10">
+          Conecta con tus clientes en cada etapa de su viaje, desde su
+          bienvenida hasta la fidelización, maximizando tus conversiones.
+        </p>
+        <a
+          href="#contacto"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-2 md:px-8 rounded-full transition duration-300"
+        >
+          Comienza hoy mismo
+        </a>
+      </div>
+
+      <!-- Imagen con decoración -->
+      <div class="">
+        <Image src={email} alt="Email Marketing" class="md:mt-0 mt-10" />
+      </div>
+    </div>
+  </section>
+  <!-- Sección 2: Proceso de Trabajo -->
+  <section class="bg-blue-100 px-5 md:px-20 py-20">
+    <div class="max-w-7xl mx-auto text-center mb-16">
+      <h2 class="text-4xl font-bold text-blue-700 pt-24">
+        Optimiza tu Negocio con Nuestro Proceso de Email Marketing
+      </h2>
+      <p class="text-lg text-gray-600 mt-4">
+        Descubre cómo nuestro enfoque estratégico lleva tus campañas de email al
+        siguiente nivel.
+      </p>
+    </div>
+
+    <div
+      class="grid py-10 md:grid-cols-3 lg:grid-cols-3 gap-8 max-w-7xl mx-auto"
+    >
+      <div class="bg-white p-10 rounded-xl shadow-sm">
+        <div class="mb-4">
+          <span class="rounded-lg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="w-12 h-12 text-blue-500"
+              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
+              ></path><path d="M9 13h-2"></path><path d="M13 10h-6"></path><path
+                d="M11 7h-4"></path></svg
+            >
+          </span>
+          <h3 class="text-xl font-bold text-blue-900 uppercase md:mt-5">
+            Contenido Relevante y Persuasivo
+          </h3>
+        </div>
+        <p class="text-slate-800">
+          El contenido de un buen correo electrónico debe estar alineado con los
+          intereses del suscriptor, garantizando una experiencia coherente desde
+          la apertura hasta la acción final. Es esencial que el mensaje sea
+          claro y resalte los beneficios o soluciones ofrecidas para captar la
+          atención rápidamente.
+        </p>
+      </div>
+
+      <div class="bg-white p-10 rounded-xl shadow-sm">
+        <div class="mb-4">
+          <span class="rounded-lg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="w-12 h-12 text-blue-500"
+              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                d="M13.05 20.1l-3.05 -6.1l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5l-3.312 9.173"
+              ></path><path d="M19 16l-2 3h4l-2 3"></path></svg
+            >
+          </span>
+          <h3 class="text-xl font-bold text-blue-900 uppercase md:mt-5">
+            Call-to-Action (CTA) Fuerte
+          </h3>
+        </div>
+        <p class="text-slate-800">
+          Cada email debe incluir un CTA prominente y persuasivo que guíe al
+          lector hacia la acción deseada, como realizar una compra o
+          registrarse. Los botones de CTA deben ser claros, atractivos y
+          transmitir un sentido de urgencia o exclusividad.
+        </p>
+      </div>
+
+      <div class="bg-white p-10 rounded-xl shadow-sm">
+        <div class="mb-4">
+          <span class="rounded-lg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="w-12 h-12 text-blue-500"
+              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                d="M11.5 21h-3.5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v6"
+              ></path><path d="M11 4h2"></path><path
+                d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z"
+              ></path></svg
+            >
+          </span>
+          <h3 class="text-xl font-bold text-blue-900 uppercase md:mt-5">
+            Diseño Adaptado a Dispositivos Móviles
+          </h3>
+        </div>
+        <p class="text-slate-800">
+          Dado que gran parte de los correos se abren en smartphones, es
+          fundamental que los emails sean responsivos y se adapten a diferentes
+          tamaños de pantalla. Esto garantiza una lectura fluida y aumenta las
+          posibilidades de conversión desde cualquier dispositivo.
+        </p>
+      </div>
+
+      <div class="bg-white p-10 rounded-xl shadow-sm">
+        <div class="mb-4">
+          <span class="rounded-lg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="w-12 h-12 text-blue-500"
+              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                d="M3 7h3"></path><path d="M3 11h2"></path><path
+                d="M9.02 8.801l-.6 6a2 2 0 0 0 1.99 2.199h7.98a2 2 0 0 0 1.99 -1.801l.6 -6a2 2 0 0 0 -1.99 -2.199h-7.98a2 2 0 0 0 -1.99 1.801z"
+              ></path><path
+                d="M9.8 7.5l2.982 3.28a3 3 0 0 0 4.238 .202l3.28 -2.982"
+              ></path></svg
+            >
+          </span>
+          <h3 class="text-xl font-bold text-blue-900 uppercase md:mt-5">
+            Tiempos de Carga Rápidos
+          </h3>
+        </div>
+        <p class="text-slate-800">
+          Emails pesados que tardan en cargar pueden aumentar la tasa de
+          abandono. Optimizar el contenido visual y el tamaño del correo
+          garantiza que los mensajes se carguen rápidamente y mantengan la
+          atención del lector.
+        </p>
+      </div>
+
+      <div class="bg-white p-10 rounded-xl shadow-sm">
+        <div class="mb-4">
+          <span class="rounded-lg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="w-12 h-12 text-blue-500"
+              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+              ></path></svg
+            >
+          </span>
+          <h3 class="text-xl font-bold text-blue-900 uppercase md:mt-5">
+            Elementos Visuales Relevantes
+          </h3>
+        </div>
+        <p class="text-slate-800">
+          Incluir imágenes o GIFs relevantes en los correos aumenta su
+          efectividad. Los elementos visuales deben respaldar el mensaje
+          principal, ser de alta calidad y estar optimizados para que no
+          ralenticen la carga del email.
+        </p>
+      </div>
+
+      <div class="bg-white p-10 rounded-xl shadow-sm">
+        <div class="mb-4">
+          <span class="rounded-lg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="w-12 h-12 text-blue-500"
+              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                d="M10 9m0 1.105a1.105 1.105 0 0 1 1.105 -1.105h1.79a1.105 1.105 0 0 1 1.105 1.105v9.79a1.105 1.105 0 0 1 -1.105 1.105h-1.79a1.105 1.105 0 0 1 -1.105 -1.105z"
+              ></path><path
+                d="M17 3m0 1.105a1.105 1.105 0 0 1 1.105 -1.105h1.79a1.105 1.105 0 0 1 1.105 1.105v15.79a1.105 1.105 0 0 1 -1.105 1.105h-1.79a1.105 1.105 0 0 1 -1.105 -1.105z"
+              ></path><path d="M5 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"
+              ></path></svg
+            >
+          </span>
+          <h3 class="text-xl font-bold text-blue-900 uppercase md:mt-5">
+            Indicadores de Confianza
+          </h3>
+        </div>
+        <p class="text-slate-800">
+          Establecer confianza es fundamental para incentivar las conversiones.
+          Por ello, es recomendable incluir testimonios de clientes satisfechos,
+          insignias de seguridad o sellos de confianza en los correos,
+          especialmente en campañas promocionales y correos de carrito
+          abandonado.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="bg-white text-gray-800 py-16 px-8">
+    <div class="max-w-6xl mx-auto">
+      <!-- Título Principal -->
+      <h1 class="text-4xl font-extrabold text-center mb-4">
+        Un Proceso Detallado para Campañas Exitosas
+      </h1>
+      <p class="text-lg text-center text-gray-600 mb-12">
+        Tu éxito es nuestra prioridad. Desde la conceptualización inicial hasta
+        los ajustes finales, seguimos un proceso colaborativo para garantizar
+        que cada correo enviado tenga el máximo impacto.
+      </p>
+
+      <!-- Sección de Expertos -->
+      <div
+        class="flex flex-col md:flex-row items-center justify-center gap-12 mb-16"
+      >
+        <div class="flex-1">
+          <Image
+            src={equipoemail}
+            alt="Email Marketing"
+            class="mx-auto max-w-sm"
+          />
+        </div>
+        <div class="flex-1">
+          <h2 class="text-3xl font-bold mb-4">
+            Agencia Líder en Email Marketing
+          </h2>
+          <p class="text-lg text-gray-600 mb-4">
+            Experimenta lo mejor en servicios de email marketing profesional.
+            Nuestro equipo combina creatividad, estrategia y años de experiencia
+            para diseñar campañas efectivas que aumentan la interacción con tus
+            clientes y generan resultados reales para tu negocio.
+          </p>
+        </div>
+      </div>
+
+      <!-- Proceso Detallado -->
+      <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+        <div class="flex-1">
+          <h2 class="text-3xl font-bold mb-4">
+            Equipo de Expertos en Email Marketing
+          </h2>
+          <p class="text-lg text-gray-600">
+            Un equipo completo de expertos a tu disposición. Asignamos
+            especialistas en email marketing, diseñadores gráficos y redactores
+            para asegurarnos de que cada correo sea atractivo y efectivo.
+            Nuestro equipo trabaja en conjunto para crear mensajes estratégicos
+            que se alineen con tus objetivos comerciales.
+          </p>
+        </div>
+        <Image
+          src={circuloemail}
+          alt="Email Marketing"
+          class="mx-auto max-w-sm"
+        />
+      </div>
+    </div>
+  </section>
+  <section class="bg-blue-100 py-16">
+    <div class="max-w-3xl mx-auto bg-blue-100 rounded-lg p-12 text-center">
+      <!-- Ícono superior (puedes cambiarlo por una imagen o un ícono real) -->
+      <div class="flex justify-center mb-4">
+        <div
+          class="w-12 h-12 bg-blue-300 rounded-full flex items-center justify-center"
+        >
+          ✨
+        </div>
+      </div>
+
+      <!-- Título destacado -->
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+        ¿Listo para maximizar tus campañas de email marketing?
+      </h2>
+
+      <!-- Texto de descripción -->
+      <p class="text-gray-600">
+        Contáctanos para diseñar correos que impacten y generen resultados.
+      </p>
+    </div>
+  </section>
+</Layout>
