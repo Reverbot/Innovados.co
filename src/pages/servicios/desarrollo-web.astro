@@ -1,0 +1,247 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import heroWeb from "/public/hero-desarrollo-web.webp";
+import precio from "/public/precio.png";
+import cel from "/public/cel.png";
+---
+
+<Layout title="Desarrollo Web Profesional">
+  <!-- Sección 1: Soluciones Web -->
+  <section class="bg-[#f0f6ff] py-20 px-5 md:px-20">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-10">
+      <!-- Texto -->
+      <div>
+        <h1
+          class="text-4xl md:text-4xl font-extrabold text-blue-700 mb-5 leading-tight"
+        >
+          IMPULSE SU NEGOCIO CON SOLUCIONES WEB A LA MEDIDA
+        </h1>
+        <p class="text-lg font-semibold text-slate-600 mb-5">
+          DISEÑOS DINÁMICOS Y ESTRATEGIAS DIGITALES ADAPTADAS A SUS OBJETIVOS.
+        </p>
+        <p class="text-base text-slate-600 mb-10">
+          Transforme la experiencia del cliente con interfaces intuitivas y
+          consiga resultados que importan.
+        </p>
+        <a
+          href="#contacto"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-2 md:px-8 rounded-full transition duration-300"
+        >
+          Descubra cómo podemos ayudarlo
+        </a>
+      </div>
+
+      <!-- Imagen con decoración -->
+      <div class="relative">
+        <Image
+          src={heroWeb}
+          alt=" IMPULSE SU NEGOCIO CON SOLUCIONES WEB A LA MEDIDA"
+          class="rounded-xl shadow-lg md:mt-0 mt-10"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección 2: Servicios Personalizados -->
+  <section class="bg-blue-100 py-20 px-5 md:px-20">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-10">
+      <!-- Texto -->
+      <div>
+        <h2
+          class="text-2xl md:text-4xl font-extrabold text-blue-700 mb-5 leading-tight"
+        >
+          ¿POR QUÉ CONFIAR EN NUESTROS SERVICIOS WEB PERSONALIZADOS?
+        </h2>
+        <p class="mb-10">
+          <a
+            href="#"
+            class="text-blue-500 bg-white py-2 px-4 rounded-full shadow-md hover:bg-blue-100 transition"
+          >
+            Lo que nos diferencia
+          </a>
+        </p>
+        <ul class="space-y-8">
+          <li class="flex items-start gap-4">
+            <span class="text-green-500 text-3xl">✔️</span>
+            <div>
+              <h3 class="text-2xl font-bold text-slate-800 mb-1">
+                Flexibilidad Total
+              </h3>
+              <p class="text-slate-600">
+                Desarrollamos sitios adaptados a su visión y necesidades.
+              </p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="text-green-500 text-3xl">✔️</span>
+            <div>
+              <h3 class="text-2xl font-bold text-slate-800 mb-1">
+                Diseños Únicos y Memorables
+              </h3>
+              <p class="text-slate-600">
+                Creamos sitios que transmiten la esencia de su marca y cautivan
+                a su público.
+              </p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="text-green-500 text-3xl">✔️</span>
+            <div>
+              <h3 class="text-2xl font-bold text-slate-800 mb-1">
+                Preparado para el Futuro
+              </h3>
+              <p class="text-slate-600">
+                Nuestros sitios evolucionan con su negocio para mantenerse
+                siempre actualizados.
+              </p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="text-green-500 text-3xl">✔️</span>
+            <div>
+              <h3 class="text-2xl font-bold text-slate-800 mb-1">
+                SEO Optimizado
+              </h3>
+              <p class="text-slate-600">
+                Desarrollamos sitios optimizados para mejorar la visibilidad y
+                aumentar el tráfico.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Gráfico -->
+      <div class="relative">
+        <div
+          class="bg-gradient-to-r from-blue-300 via-blue-400 to-green-400 p-10 rounded-full shadow-xl"
+        >
+          <h3 class="text-white text-3xl font-extrabold text-center mb-5">
+            DESIGN
+          </h3>
+          <div class="grid grid-cols-2 gap-4 text-white text-center">
+            <div>Usabilidad</div>
+            <div>Funcionalidad</div>
+            <div>Marca</div>
+            <div>Mensaje</div>
+            <div>Accesibilidad</div>
+            <div>Profesionalismo</div>
+            <div>Simplicidad</div>
+            <div>Atractivo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección 3: Paquetes Web -->
+  <section class="max-w-7xl mx-auto pt-16 px-8">
+    <div class="text-center mb-12">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900">
+        Elige el paquete web ideal para tus necesidades
+      </h1>
+      <p class="text-lg mt-4 text-gray-600">
+        Nuestros servicios de desarrollo y diseño web están orientados a crear
+        experiencias intuitivas, fomentando la confianza del usuario y
+        maximizando tus resultados.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12">
+      <!-- Imagen -->
+      <div class="flex justify-center items-center">
+        <Image src={cel} alt="Ejemplo de diseño web" class="w-64 md:w-80" />
+      </div>
+
+      <!-- Contenido del paquete -->
+      <div>
+        <h2 class="text-2xl font-bold text-blue-700 mb-4">
+          Desarrollo Web Personalizado
+        </h2>
+        <p class="text-gray-600 mb-6">
+          Creamos soluciones adaptadas a tus objetivos. Si necesitas algo único
+          que refleje la esencia de tu negocio y mejore la experiencia del
+          cliente, este es el paquete perfecto para ti.
+        </p>
+
+        <div class="grid grid-cols-2 gap-6">
+          <!-- Lo que incluye -->
+          <div>
+            <h3 class="font-semibold text-lg mb-2">Qué Incluye</h3>
+            <ul class="list-none space-y-2">
+              <li class="flex items-center">
+                <span class="text-green-500 mr-2">✔</span> Diseño UX/UI personalizado
+              </li>
+              <li class="flex items-center">
+                <span class="text-green-500 mr-2">✔</span> Contenido original
+              </li>
+              <li class="flex items-center">
+                <span class="text-green-500 mr-2">✔</span> Diseño adaptativo (responsive)
+              </li>
+              <li class="flex items-center">
+                <span class="text-green-500 mr-2">✔</span> Imágenes de alta calidad
+              </li>
+              <li class="flex items-center">
+                <span class="text-green-500 mr-2">✔</span> Hasta 2 revisiones
+              </li>
+              <li class="flex items-center">
+                <span class="text-green-500 mr-2">✔</span> Configuración de Google
+                Analytics
+              </li>
+            </ul>
+          </div>
+
+          <!-- Lo que no está incluido -->
+          <div>
+            <h3 class="font-semibold text-lg mb-2">Qué No Está Incluido</h3>
+            <ul class="list-none space-y-2">
+              <li class="flex items-center">
+                <span class="text-red-500 mr-2">✖</span> SEO avanzado (palabras
+                clave, estrategia)
+              </li>
+              <li class="flex items-center">
+                <span class="text-red-500 mr-2">✖</span> Dominio y SSL
+              </li>
+              <li class="flex items-center">
+                <span class="text-red-500 mr-2">✖</span> Hospedaje incluido
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative bg-blue-100 py-16">
+    <div class="absolute top-0 left-0 w-1/3 h-full rounded-full"></div>
+    <div class="absolute bottom-0 right-0 w-1/3 h-full rounded-full"></div>
+
+    <div
+      class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row items-center justify-between relative"
+    >
+      <!-- Texto -->
+      <div class="text-center md:text-left mb-8 md:mb-0">
+        <h2 class="text-3xl font-bold text-gray-800">
+          Invierta donde obtenga el mayor valor para su negocio
+        </h2>
+        <p class="text-lg text-gray-600 mt-4 mb-10">
+          No pague de más por servicios que no le darán resultados sostenibles.
+          Con nuestros planes personalizados y accesibles, su empresa estará
+          lista para convertir tráfico en clientes reales.
+        </p>
+        <a
+          href="#contacto"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-2 md:px-8 rounded-full transition duration-300"
+        >
+          Descubra cómo podemos ayudarlo
+        </a>
+      </div>
+
+      <!-- Imagen -->
+      <div class="flex justify-center md:justify-end">
+        <Image src={precio} alt="Opciones de precios" class="w-64 md:w-80" />
+      </div>
+    </div>
+  </section>
+</Layout>

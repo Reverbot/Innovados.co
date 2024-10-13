@@ -3,128 +3,198 @@ import { Image } from "astro:assets";
 import logo from "/public/innovados.webp";
 ---
 
-<header class="md:py-5 z-10 text-slate-800 bg-[#f0f6ff]">
-  <nav
-    class="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 lg:px-20"
-    aria-label="Global"
-  >
-    <div class="flex lg:flex-1">
-      <a href="#" class="-m-1.5 p-1.5">
-        <span class="sr-only">InnovaDos.co</span>
-        <a href="/"
-          ><Image src={logo} alt="Innovados" class="md:h-10 h-5 w-auto" /></a
-        >
-      </a>
-    </div>
-    <div class="flex lg:hidden">
-      <button
-        type="button"
-        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-cyan-500"
-        id="open-menu"
-      >
-        <span class="sr-only">Open main menu</span>
-        <svg
-          class="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          aria-hidden="true"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
-        </svg>
-      </button>
-    </div>
-    <div class="hidden lg:flex lg:gap-x-12 items-center">
-      <div class="relative"></div>
+<header class="bg-[#f0f6ff] py-5 text-slate-800">
+  <nav class="mx-auto max-w-7xl px-6 flex items-center justify-between">
+    <a href="/" class="flex items-center">
+      <Image src={logo} alt="Innovados" class="h-10 w-auto" />
+    </a>
 
-      <a href="#servicios" class="font-semibold leading-6 hover:text-cyan-500"
-        >Servicios</a
-      >
-      <a href="#funnels" class="font-semibold leading-6 hover:text-cyan-500"
-        >Funnels</a
-      >
-      <a href="#email" class="font-semibold leading-6 hover:text-cyan-500"
-        >Email Marketing</a
-      >
-      <!-- <a href="#trabajos" class="font-semibold leading-6 hover:text-cyan-500"
-        >Trabajos</a
-      > -->
-      <a
-        href="#contacto"
-        class="text-white font-semibold bg-gradient-to-r py-2 px-8 rounded-full from-emerald-400 via-sky-500 to-emerald-500 bg-no-repeat bg-[position:_100%_100%] hover:bg-[position:_0%_0%] bg-[size:_200%] transition-all duration-500"
-        >Contacto</a
-      >
-    </div>
-  </nav>
-  <!-- Mobile menu, show/hide based on menu open state. -->
-  <div class="hidden" role="dialog" aria-modal="true" id="mobile-menu">
-    <!-- Background backdrop, show/hide based on slide-over state. -->
-    <div class="fixed inset-0 z-10 bg-black bg-opacity-50"></div>
-    <div
-      class="bg-[length:500px_500px] bg-repeat-x bg-center bg-cyan-950 bg-[url('data:image/svg+xml;base64,PHN2ZyAgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA2KSIgaGVpZ2h0PSI1NnB4IiB3aWR0aD0iNTZweCIgdmlld0JveD0iMCAwIDU2IDU2IiBwcmVzZXJ2ZUFzcGV0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTI4LDI4VjU2SDBWMjhXTTU2LDBWMjgiLz48L3N2Zz4=')] fixed inset-y-0 right-0 z-10 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
-    >
-      <div class="flex items-center justify-between">
-        <a href="#" class="-m-1.5 p-1.5">
-          <span class="sr-only">Your Company</span>
-          <Image src={logo} alt="Innovados" class="h-10 w-auto" />
-        </a>
-        <button
-          type="button"
-          class="-m-2.5 rounded-md p-2.5 text-cyan-500"
-          id="close-menu"
-        >
-          <span class="sr-only">Close menu</span>
+    <!-- Menú principal -->
+    <div class="hidden lg:flex space-x-8 items-center">
+      <div class="relative group">
+        <button class="font-semibold hover:text-cyan-500 flex items-center">
+          Servicios de marketing
           <svg
-            class="h-6 w-6"
+            class="ml-2 w-4 h-4"
             fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
             stroke="currentColor"
-            aria-hidden="true"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
-              d="M6 18L18 6M6 6l12 12"></path>
+              d="M19 9l-7 7-7-7"></path>
           </svg>
         </button>
-      </div>
-      <div class="mt-6 flow-root">
-        <div class="-my-6 divide-y divide-gray-500/10">
-          <div class="space-y-2 py-6">
-            <a
-              href="#servicios"
-              class="-mx-3 close-menu block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-300 hover:text-cyan-500"
-              >Servicios</a
-            >
-            <a
-              href="#funnels"
-              class="-mx-3 close-menu block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-300 hover:text-cyan-500"
-              >Funnels</a
-            >
-            <a
-              href="#email"
-              class="-mx-3 close-menu block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-300 hover:text-cyan-500"
-              >Email Marketing</a
-            >
-            <a
-              href="#trabajos"
-              class="-mx-3 close-menu block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-300 hover:text-cyan-500"
-              >Trabajos</a
-            >
-            <a
-              href="#contacto"
-              class="-mx-3 close-menu block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-300 hover:text-cyan-500"
-              >Contacto</a
-            >
-          </div>
+
+        <!-- Menú desplegable -->
+        <div
+          class="absolute z-10 left-0 mt-2 w-64 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition duration-300 transform scale-95 group-hover:scale-100"
+        >
+          <ul class="divide-y divide-gray-200">
+            <!-- <li class="flex items-center gap-4 px-4 py-3 hover:bg-blue-50">
+              <span class="bg-blue-100 p-2 rounded-lg">
+                <svg
+                  class="w-6 h-6 text-blue-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"></path>
+                </svg>
+              </span>
+              <a href="#" class="font-medium text-gray-700">PPC</a>
+            </li> -->
+            <!-- <li class="flex items-center gap-4 px-4 py-3 hover:bg-blue-50">
+              <span class="bg-green-100 p-2 rounded-lg">
+                <svg
+                  class="w-6 h-6 text-green-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 10h11M9 21V3m12 12h-8m8-8h-8"></path>
+                </svg>
+              </span>
+              <a href="#" class="font-medium text-gray-700">SEO</a>
+            </li> -->
+            <!-- <li class="flex items-center gap-4 px-4 py-3 hover:bg-blue-50">
+              <span class="bg-yellow-100 p-2 rounded-lg">
+                <svg
+                  class="w-6 h-6 text-yellow-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14 10l-2 2m0 0l-2-2m2 2V6m8 8a9 9 0 11-6.28-8.28"
+                  ></path>
+                </svg>
+              </span>
+              <a href="#" class="font-medium text-gray-700">Redes Sociales</a>
+            </li> -->
+            <li class="flex items-center gap-4 px-4 py-3 hover:bg-blue-50">
+              <span class="bg-red-100 p-2 rounded-lg">
+                <svg
+                  class="w-6 h-6 text-red-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M20 12H4m16 0a8 8 0 11-8-8"></path>
+                </svg>
+              </span>
+              <a
+                href="/servicios/desarrollo-web"
+                class="font-medium text-gray-700">Servicios Web</a
+              >
+            </li>
+            <li class="flex items-center gap-4 px-4 py-3 hover:bg-blue-50">
+              <span class="bg-green-100 p-2 rounded-lg">
+                <svg
+                  class="w-6 h-6 text-green-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 10h11M9 21V3m12 12h-8m8-8h-8"></path>
+                </svg>
+              </span>
+              <a href="/servicios/copywrite" class="font-medium text-gray-700"
+                >Copywriter</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
+
+      <a href="#funnels" class="font-semibold hover:text-cyan-500">Funnels</a>
+      <a href="#email" class="font-semibold hover:text-cyan-500"
+        >Email Marketing</a
+      >
+      <a
+        href="#contacto"
+        class="text-white font-semibold bg-gradient-to-r from-emerald-400 via-sky-500 to-emerald-500 px-6 py-2 rounded-full shadow-md transition hover:scale-105"
+      >
+        Contacto
+      </a>
     </div>
+
+    <!-- Menú móvil -->
+    <div class="lg:hidden">
+      <button id="open-menu" class="text-cyan-500">
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Menú móvil desplegable -->
+  <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-50 px-6 py-4">
+    <div class="flex justify-between items-center mb-6">
+      <a href="/">
+        <Image src={logo} alt="Innovados" class="h-10 w-auto" />
+      </a>
+      <button id="close-menu" class="text-cyan-500">
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <ul class="space-y-4">
+      <li>
+        <a href="#servicios" class="font-semibold text-gray-700">Servicios</a>
+      </li>
+      <li>
+        <a href="#funnels" class="font-semibold text-gray-700">Funnels</a>
+      </li>
+      <li>
+        <a href="#email" class="font-semibold text-gray-700">Email Marketing</a>
+      </li>
+      <li>
+        <a href="#contacto" class="font-semibold text-gray-700">Contacto</a>
+      </li>
+    </ul>
   </div>
 </header>
 
@@ -134,45 +204,16 @@ import logo from "/public/innovados.webp";
     const closeMenuButton = document.getElementById("close-menu");
     const mobileMenu = document.getElementById("mobile-menu");
 
-    if (openMenuButton && closeMenuButton && mobileMenu) {
+    if (openMenuButton) {
       openMenuButton.addEventListener("click", () => {
-        mobileMenu.classList.remove("hidden");
+        mobileMenu?.classList.remove("hidden");
       });
+    }
 
+    if (closeMenuButton) {
       closeMenuButton.addEventListener("click", () => {
-        mobileMenu.classList.add("hidden");
-      });
-
-      document.querySelectorAll(".close-menu").forEach((link) => {
-        link.addEventListener("click", () => {
-          mobileMenu.classList.add("hidden");
-        });
+        mobileMenu?.classList.add("hidden");
       });
     }
   });
 </script>
-
-<!-- <style>
-  header {
-    animation: scroll-header linear both;
-    animation-timeline: scroll(root);
-    animation-range: 0 200px;
-  }
-  img {
-    animation: scroll-img linear both;
-    animation-timeline: scroll(root);
-    animation-range: 0 200px;
-  }
-  @keyframes scroll-header {
-    100% {
-      padding: 0;
-      background-color: rgba(8, 51, 68, 0.8);
-      backdrop-filter: blur(5px);
-    }
-  }
-  @keyframes scroll-img {
-    100% {
-      height: 2rem;
-    }
-  }
-</style> -->

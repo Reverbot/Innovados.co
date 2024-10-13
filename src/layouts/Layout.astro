@@ -4,6 +4,8 @@ interface Props {
 }
 import { ViewTransitions } from "astro:transitions";
 import Menu from "../sections/Menu.astro";
+import Footer from "../sections/Footer.astro";
+import Form from "../sections/Form.astro";
 const { title } = Astro.props;
 // Supports weights 100-800
 import "@fontsource-variable/sora";
@@ -28,14 +30,17 @@ import SpeedInsights from "@vercel/speed-insights/astro";
     <Menu />
 
     <slot />
+    <Form />
+    <Footer />
+
     <SpeedInsights />
   </body>
 </html>
 <style is:global>
   html {
     font-family: "Sora Variable", system-ui, sans-serif;
-    background: #ddd;
-    color: #fff;
+    background: #f0f6ff;
+    color: #1e293b;
   }
 
   .rotate-img {

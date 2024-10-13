@@ -1,0 +1,270 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import copy from "/public/copy.png";
+---
+
+<Layout title="Servicios Profesionales de Copywriting">
+  <!-- Hero: Impacto del Copywriting -->
+  <section class="bg-[#f0f6ff] py-20 px-5 md:px-20">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-10">
+      <!-- Texto -->
+      <div>
+        <h1
+          class="text-4xl md:text-4xl font-extrabold text-blue-700 mb-5 leading-tight"
+        >
+          POTENCIA TU NEGOCIO CON COPYWRITING PERSUASIVO
+        </h1>
+        <p class="text-lg font-semibold text-slate-600 mb-5">
+          REDACTAMOS TEXTOS QUE CAPTURAN LA ATENCIÓN Y CONVIERTEN VISITAS EN
+          VENTAS.
+        </p>
+        <p class="text-base text-slate-600 mb-10">
+          Desarrollamos textos estratégicos enfocados en tus objetivos para
+          maximizar la conexión con tus clientes y aumentar tu conversión.
+        </p>
+        <a
+          href="#contacto"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-2 md:px-8 rounded-full transition duration-300"
+        >
+          Descubra cómo podemos ayudarlo
+        </a>
+      </div>
+
+      <!-- Imagen con decoración -->
+      <div class="relative">
+        <Image
+          src={copy}
+          alt=" IMPULSE SU NEGOCIO CON SOLUCIONES WEB A LA MEDIDA"
+          class="md:mt-0 mt-10"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección 1: Beneficios del Copywriting -->
+  <section class="bg-blue-100 py-20 px-5 md:px-20">
+    <div class="max-w-7xl mx-auto text-center mb-10">
+      <h2 class="text-4xl font-bold text-blue-700">
+        Aumenta tus Ventas con Textos Persuasivos
+      </h2>
+      <p class="text-lg text-gray-600 mt-4">
+        Creamos contenido estratégico que conecta con tu audiencia y optimiza
+        tus resultados comerciales.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <div class="bg-white p-8 rounded-xl shadow-sm">
+        <div class="flex items-center justify-center mb-6">
+          <img
+            src="/path-to-icon/icon1.svg"
+            alt="Conecta con tu Audiencia"
+            class="w-12 h-12"
+          />
+        </div>
+        <h3 class="text-xl font-bold text-blue-700 mb-4">
+          Conecta con tu Audiencia
+        </h3>
+        <p class="text-gray-600">
+          Creamos mensajes claros y relevantes que generan una conexión
+          emocional con tu público objetivo.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-xl shadow-sm">
+        <div class="flex items-center justify-center mb-6">
+          <img
+            src="/path-to-icon/icon2.svg"
+            alt="Impulsa la Conversión"
+            class="w-12 h-12"
+          />
+        </div>
+        <h3 class="text-xl font-bold text-blue-700 mb-4">
+          Impulsa la Conversión
+        </h3>
+        <p class="text-gray-600">
+          Diseñamos textos enfocados en persuadir a los clientes y aumentar tus
+          ventas.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-xl shadow-sm">
+        <div class="flex items-center justify-center mb-6">
+          <img
+            src="/path-to-icon/icon3.svg"
+            alt="Optimización SEO"
+            class="w-12 h-12"
+          />
+        </div>
+        <h3 class="text-xl font-bold text-blue-700 mb-4">Optimización SEO</h3>
+        <p class="text-gray-600">
+          Nuestros textos están optimizados para mejorar la visibilidad de tu
+          negocio en buscadores.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección 2: Proceso de Trabajo -->
+  <section class="bg-blue-50 px-5 md:px-20 py-20">
+    <div class="max-w-7xl mx-auto text-center mb-16">
+      <h2 class="text-4xl font-bold text-blue-700 pt-24">
+        Optimiza tu Negocio con Nuestro Proceso de Copywriting
+      </h2>
+      <p class="text-lg text-gray-600 mt-4">
+        Descubre cómo nuestro enfoque estratégico lleva tus mensajes al
+        siguiente nivel.
+      </p>
+    </div>
+
+    <div
+      class="grid py-10 md:grid-cols-3 lg:grid-cols-3 gap-8 max-w-7xl mx-auto"
+    >
+      <div class="bg-white p-10 rounded-xl shadow-sm">
+        <div class="mb-4">
+          <span class="rounded-lg">
+            <svg
+              class="w-12 h-12 text-blue-500"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M12 20l9-5-9-5-9 5 9 5zm0-5v10l9-5-9-5z"></path>
+            </svg>
+          </span>
+          <h3 class="text-xl font-bold text-blue-900 uppercase">
+            Investigación
+          </h3>
+        </div>
+        <p class="text-slate-800">
+          Analizamos tu mercado y entendemos a tu audiencia objetivo para
+          garantizar mensajes efectivos.
+        </p>
+      </div>
+
+      <div class="bg-white p-10 rounded-xl shadow-sm">
+        <div class="mb-4">
+          <span class="rounded-lg">
+            <svg
+              class="w-12 h-12 text-blue-500"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M9 12l2 2 4-4"></path>
+            </svg>
+          </span>
+          <h3 class="text-xl font-bold text-blue-900 uppercase">Estrategia</h3>
+        </div>
+        <p class="text-slate-800">
+          Definimos mensajes clave y el tono adecuado para cada audiencia.
+        </p>
+      </div>
+
+      <div class="bg-white p-10 rounded-xl shadow-sm">
+        <div class="mb-4">
+          <span class="rounded-lg">
+            <svg
+              class="w-12 h-12 text-blue-500"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M4 4v16h16"></path>
+            </svg>
+          </span>
+          <h3 class="text-xl font-bold text-blue-900 uppercase">Redacción</h3>
+        </div>
+        <p class="text-slate-800">
+          Creamos textos persuasivos que capturan la atención y fomentan la
+          conversión.
+        </p>
+      </div>
+
+      <div class="bg-white p-10 rounded-xl shadow-sm">
+        <div class="mb-4">
+          <span class="rounded-lg">
+            <svg
+              class="w-12 h-12 text-blue-500"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 8v4l3 3"></path>
+            </svg>
+          </span>
+          <h3 class="text-xl font-bold text-blue-900 uppercase">
+            Optimización
+          </h3>
+        </div>
+        <p class="text-slate-800">
+          Refinamos y ajustamos cada texto para maximizar su impacto.
+        </p>
+      </div>
+
+      <div class="bg-white p-10 rounded-xl shadow-sm">
+        <div class="mb-4">
+          <span class="rounded-lg">
+            <svg
+              class="w-12 h-12 text-blue-500"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M8 16h8"></path>
+            </svg>
+          </span>
+          <h3 class="text-xl font-bold text-blue-900 uppercase">Reportes</h3>
+        </div>
+        <p class="text-slate-800">
+          Te proporcionamos informes detallados sobre el rendimiento de los
+          textos.
+        </p>
+      </div>
+
+      <div class="bg-white p-10 rounded-xl shadow-sm">
+        <div class="mb-4">
+          <span class="rounded-lg">
+            <svg
+              class="w-12 h-12 text-blue-500"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M3 10h11"></path>
+            </svg>
+          </span>
+          <h3 class="text-xl font-bold text-blue-900 uppercase">Ajustes</h3>
+        </div>
+        <p class="text-slate-800">
+          Adaptamos los textos en función del análisis y retroalimentación.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="bg-blue-100 py-16">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-gray-800">
+        ¿Listo para transformar tu negocio con copywriting profesional?
+      </h2>
+      <p class="text-lg text-gray-600 mt-4 mb-8">
+        Contáctanos hoy y descubre cómo nuestros textos estratégicos pueden
+        aumentar tus ventas.
+      </p>
+      <a
+        href="#contacto"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300"
+      >
+        Contáctanos Ahora
+      </a>
+    </div>
+  </section>
+</Layout>
