@@ -1,5 +1,6 @@
 ---
-import HeroImage from "../components/HeroImage.astro";
+import Image from "astro/components/Image.astro";
+import email from "/public/email/heroemail.png";
 ---
 
 <section id="email" class="max-w-6xl mx-auto py-20 px-5">
@@ -69,6 +70,6 @@ import HeroImage from "../components/HeroImage.astro";
     </ul>
 
     <!-- Imagen del héroe -->
-    <HeroImage />
+    <Image src={email} alt="Email Marketing" class="md:mt-0 mt-10" />
   </div>
 </section>
