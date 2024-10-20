@@ -1,0 +1,17 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  return [{ params: { id: "1" }, props: { title: "Hello, Astro!" } }];
+}
+
+const { title } = Astro.props;
+---
+
+<Layout title={title}>
+  <main>
+    <h1>Blog Post</h1>
+    <p>{title}</p>
+  </main>
+</Layout>
