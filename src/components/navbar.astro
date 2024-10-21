@@ -1,0 +1,91 @@
+---
+// Importar los componentes y elementos necesarios
+import Container from "../components/container.astro";
+import Link from "../components/ui/link.astro";
+import Dropdown from "./dropdown.astro";
+import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import logo from "../../public/innovados.webp";
+import { Image } from "astro:assets";
+
+// Definir los elementos del menú
+const menuitems = [
+  {
+    title: "Servicios de marketing",
+    path: "#",
+    children: [
+      { title: "Servicios Web", path: "/servicios/desarrollo-web" },
+      { title: "Copywriter", path: "/servicios/copy" },
+      { title: "Email Marketing", path: "/servicios/email" },
+    ],
+  },
+  {
+    title: "Sobre Nosotros",
+    path: "/nosotros",
+  },
+];
+---
+
+<Container>
+  <header class="flex flex-col lg:flex-row justify-between items-center py-5">
+    <Astronav>
+      <div class="flex w-full lg:w-auto items-center justify-between">
+        <!-- Logo -->
+        <a href="/" class="text-lg">
+          <Image
+            src={logo}
+            alt="Logo Innovados"
+            class="w-36 md:h-10 md:w-auto"
+          />
+        </a>
+        <!-- Icono de menú para móviles -->
+        <div class="block lg:hidden">
+          <MenuIcon class="w-6 h-6 text-gray-800" />
+        </div>
+      </div>
+
+      <!-- Menú de elementos principales -->
+      <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
+        <ul class="flex flex-col lg:flex-row lg:gap-3">
+          {
+            menuitems.map((item, index) => (
+              <>
+                {item.children ? (
+                  <Dropdown
+                    title={item.title}
+                    children={item.children}
+                    lastItem={index === menuitems.length - 1}
+                  />
+                ) : (
+                  <li>
+                    <a
+                      href={item.path}
+                      class="flex lg:px-3 py-2 items-center font-semibold hover:text-cyan-500"
+                    >
+                      <span>{item.title}</span>
+                      {item.badge && (
+                        <span class="ml-1 px-2 py-0.5 text-[10px] animate-pulse font-semibold uppercase text-white bg-indigo-600 rounded-full">
+                          New
+                        </span>
+                      )}
+                    </a>
+                  </li>
+                )}
+              </>
+            ))
+          }
+        </ul>
+
+        <!-- Opciones móviles adicionales -->
+        <!-- <div class="lg:hidden flex items-center mt-3 gap-4">
+          <Link href="#" style="muted" block size="md">Log in</Link>
+          <Link href="#" size="md" block>Sign up</Link>
+        </div> -->
+      </MenuItems>
+    </Astronav>
+
+    <!-- Botones adicionales para pantallas grandes -->
+    <div class="hidden lg:flex items-center gap-4">
+      <Link href="/contacto" size="md">Contacto</Link>
+    </div>
+  </header>
+</Container>

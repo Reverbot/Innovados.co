@@ -9,12 +9,12 @@ import equipoemail from "/public/email/equipo-email.png";
 <!-- Landing Page Structure for Email Marketing --><!-- Header Section -->
 <Layout title="Servicios Profesionales de Copywriting">
   <!-- Hero: Impacto del Copywriting -->
-  <section class="bg-[#f0f6ff] py-20 px-5 md:px-20">
+  <section class="bg-[#f0f6ff] md:py-20 px-5 md:px-20">
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-10">
       <!-- Texto -->
       <div>
         <h1
-          class="text-4xl md:text-4xl font-extrabold text-blue-700 mb-5 leading-tight"
+          class="text-2xl md:text-4xl font-extrabold text-blue-700 mb-5 leading-tight"
         >
           IMPULSA TU NEGOCIO CON EMAIL MARKETING ESTRATÉGICO
         </h1>
@@ -36,7 +36,11 @@ import equipoemail from "/public/email/equipo-email.png";
 
       <!-- Imagen con decoración -->
       <div class="">
-        <Image src={email} alt="Email Marketing" class="md:mt-0 mt-10" />
+        <Image
+          src={email}
+          alt="Email Marketing"
+          class="md:mt-0 my-10 w-2/3 mx-auto"
+        />
       </div>
     </div>
   </section>
@@ -306,7 +310,7 @@ import equipoemail from "/public/email/equipo-email.png";
         <Image
           src={circuloemail}
           alt="Email Marketing"
-          class="mx-auto max-w-sm"
+          class="mx-auto max-w-sm w-64 md:w-80"
         />
       </div>
     </div>
